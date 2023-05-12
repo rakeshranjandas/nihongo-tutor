@@ -23,8 +23,8 @@ function extractAndPack(str) {
 
 		packet.push({
 			char: data[0],
-			desc: data[1],
-			sound: data[2]
+			sound: data[1],
+			desc: data[2],
 		});
 	}
 
