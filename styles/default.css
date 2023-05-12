@@ -1,0 +1,11 @@
+#view {
+	/*width: 100%;*/
+	border: 1px solid red;
+	font-size: 5em;
+	text-align: center;
+	padding: 2em;
+}
+
+#main_div > p {
+	text-align: center;
+}
