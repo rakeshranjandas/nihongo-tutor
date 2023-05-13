@@ -32,11 +32,11 @@ export const hiragana =
 ぞ,ZO,Hiragana letter ZO
 た,TA,Hiragana letter TA
 だ,DA,Hiragana letter DA
-ち,TI,Hiragana letter TI
-ぢ,DI,Hiragana letter DI
-っ,TU,Hiragana letter small TU
-つ,TU,Hiragana letter TU
-づ,DU,Hiragana letter DU
+ち,CHI,Hiragana letter CHI
+ぢ,JI,Hiragana letter JI
+っ,TSU,Hiragana letter small TSU
+つ,TSU,Hiragana letter TSU
+づ,ZU,Hiragana letter ZU
 て,TE,Hiragana letter TE
 で,DE,Hiragana letter DE
 と,TO,Hiragana letter TO
@@ -52,7 +52,7 @@ export const hiragana =
 ひ,HI,Hiragana letter HI
 び,BI,Hiragana letter BI
 ぴ,PI,Hiragana letter PI
-ふ,HU,Hiragana letter HU
+ふ,FU,Hiragana letter FU
 ぶ,BU,Hiragana letter BU
 ぷ,PU,Hiragana letter PU
 へ,HE,Hiragana letter HE
@@ -84,4 +84,4 @@ var next =
 ゐ,WI,Hiragana letter WI
 ゑ,WE,Hiragana letter WE
 を,WO,Hiragana letter WO
-ん,N,Hiragana letter N`
+ん,N,Hiragana letter N`;
