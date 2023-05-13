@@ -19,3 +19,14 @@
 	font-weight: lighter;
 	color: blue;
 }
+
+@media only screen and (max-width: 800px) {
+  #view_random {
+	font-size: 8em;
+  }
+
+  button {
+	font-size: 4em !important;
+    padding: 1em !important;
+  }
+}
