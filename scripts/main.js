@@ -9,6 +9,9 @@ function showRandowWord() {
 	showRandomWordInView(constructWord());
 
 	hideSoundText();
+
+	hideGetRandomButton();
+	showVerifySoundButton();
 }
 
 function generateRandomCharList() {
@@ -83,6 +86,30 @@ function showRandomWordInView(word) {
 function hideSoundText() {
 	$("#view_sound").text(" ");
 }
+
+function showGetRandomButton() {
+	$("#get_random_button").show();
+}
+
+function hideGetRandomButton() {
+	$("#get_random_button").hide();
+}
+
+function showVerifySoundButton() {
+	$("#verify_sound_button").show();
+}
+
+function hideVerifySoundButton() {
+	$("#verify_sound_button").hide();
+}
+
+function verifySound() {
+	showSoundText();
+
+	hideVerifySoundButton();
+	showGetRandomButton();
+}
+	
 
 function showSoundText() {
 	setSoundTextInView(constructSoundText());

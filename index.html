@@ -14,13 +14,17 @@
 <body>
 
 	<div class="container" id="main_div">
-		<p id="view_box" title="" tabindex="0" onclick="showSoundText()">
+		<p id="view_box" title="" tabindex="0" onclick="verifySound()">
 			<span id="view_random"></span>
 			<span id="view_sound"></span>
 		</p>
 
 		<p>
-			<button class="button-primary" onclick="showRandowWord()"> Get Random </button>
+			<button class="button-primary" onclick="showRandowWord()" id="get_random_button"> Show Next </button>
+		</p>
+
+		<p>
+			<button onclick="verifySound()" style="display:none" id="verify_sound_button"> Verify Sound </button>
 		</p>
 
 	<div>
