@@ -1,3 +1,5 @@
+const max_word_len = 5;
+
 var randomCharList = [];
 
 function showRandowWord() {
@@ -5,13 +7,14 @@ function showRandowWord() {
 	generateRandomCharList();
 
 	showRandomWordInView(constructWord());
-	setSoundText(constructSoundText());
+
+	hideSoundText();
 }
 
 function generateRandomCharList() {
 
 	var char_set = getCharSet();
-	var word_length = Math.max(1, getRandomWithin(Math.min(5, char_set.length)));
+	var word_length = getRandomWithin(Math.min(max_word_len, char_set.length)) + 1;
 
 	clearList(randomCharList);
 
@@ -19,9 +22,6 @@ function generateRandomCharList() {
 		var randomIndex = getRandomWithin(char_set.length);
 		randomCharList.push(char_set[randomIndex]);
 	}
-
-	console.log("-------");
-
 }
 
 function clearList(arr) {
@@ -77,7 +77,15 @@ function constructWord() {
 }
 
 function showRandomWordInView(word) {
-	$("#view").text(word);
+	$("#view_random").text(word);
+}
+
+function hideSoundText() {
+	$("#view_sound").text(" ");
+}
+
+function showSoundText() {
+	setSoundTextInView(constructSoundText());
 }
 
 function constructSoundText() {
@@ -90,9 +98,10 @@ function constructSoundText() {
 	return sound.trim();
 }
 
-function setSoundText(voice) {
-	$("#view").attr("title", voice);
+function setSoundTextInView(voice) {
+	$("#view_sound").text(voice);
 }
+
 
 $(document).ready(function() {
 	showRandowWord();
