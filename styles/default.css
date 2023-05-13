@@ -32,7 +32,9 @@
 
   button {
 	font-size: 4em !important;
-    padding: 1em !important;
+    padding: 0 1em !important;
+    height: 5em !important;
+    margin-top: 1em !important;
   }
 
   #main_div {
