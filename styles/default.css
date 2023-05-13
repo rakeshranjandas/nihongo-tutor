@@ -31,6 +31,10 @@
 	margin-top: 15em;
   }
 
+  #view_sound {
+  	font-size: 4em;
+  }
+
   button {
 	font-size: 4em !important;
     padding: 0 1em !important;
