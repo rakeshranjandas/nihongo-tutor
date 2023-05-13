@@ -24,9 +24,19 @@
   #view_random {
 	font-size: 8em;
   }
+  
+  #view_box {
+	padding-left: 2em;
+	padding-right: 2em;
+  }
 
   button {
 	font-size: 4em !important;
     padding: 1em !important;
+  }
+
+  #main_div {
+	margin: 0;
+	width: 100%;
   }
 }

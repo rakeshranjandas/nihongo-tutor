@@ -73,10 +73,10 @@ function constructWord() {
 	var word = "";
 
 	for (let i = 0; i < randomCharList.length; i++) {
-		word += randomCharList[i].char;
+		word += randomCharList[i].char + " ";
 	}
 
-	return word;
+	return word.trim();
 }
 
 function showRandomWordInView(word) {
