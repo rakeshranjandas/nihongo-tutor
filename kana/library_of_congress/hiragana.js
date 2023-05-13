@@ -1,14 +1,9 @@
 export const hiragana = 
 
-`ぁ,A,Hiragana letter small A
-あ,A,Hiragana letter A
-ぃ,I,Hiragana letter small I
+`あ,A,Hiragana letter A
 い,I,Hiragana letter I
-ぅ,U,Hiragana letter small U
 う,U,Hiragana letter U
-ぇ,E,Hiragana letter small E
 え,E,Hiragana letter E
-ぉ,O,Hiragana letter small O
 お,O,Hiragana letter O
 か,KA,Hiragana letter KA
 が,GA,Hiragana letter GA
@@ -34,7 +29,6 @@ export const hiragana =
 だ,DA,Hiragana letter DA
 ち,CHI,Hiragana letter CHI
 ぢ,JI,Hiragana letter JI
-っ,TSU,Hiragana letter small TSU
 つ,TSU,Hiragana letter TSU
 づ,ZU,Hiragana letter ZU
 て,TE,Hiragana letter TE
@@ -66,18 +60,14 @@ export const hiragana =
 む,MU,Hiragana letter MU
 め,ME,Hiragana letter ME
 も,MO,Hiragana letter MO
-ゃ,YA,Hiragana letter small YA
 や,YA,Hiragana letter YA
-ゅ,YU,Hiragana letter small YU
 ゆ,YU,Hiragana letter YU
-ょ,YO,Hiragana letter small YO
 よ,YO,Hiragana letter YO
 ら,RA,Hiragana letter RA
 り,RI,Hiragana letter RI
 る,RU,Hiragana letter RU
 れ,RE,Hiragana letter RE
 ろ,RO,Hiragana letter RO
-ゎ,WA,Hiragana letter small WA
 わ,WA,Hiragana letter WA
 ゐ,WI,Hiragana letter WI
 ゑ,WE,Hiragana letter WE
