@@ -20,7 +20,7 @@
 	color: blue;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-device-width: 768px) {
   #view_random {
 	font-size: 8em;
   }
