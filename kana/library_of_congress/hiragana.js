@@ -22,7 +22,7 @@ export const hiragana =
 ご,GO,Hiragana letter GO
 さ,SA,Hiragana letter SA
 ざ,ZA,Hiragana letter ZA
-し,SI,Hiragana letter SI
+し,SHI,Hiragana letter SHI
 じ,ZI,Hiragana letter ZI
 す,SU,Hiragana letter SU
 ず,ZU,Hiragana letter ZU
@@ -60,10 +60,8 @@ export const hiragana =
 ぺ,PE,Hiragana letter PE
 ほ,HO,Hiragana letter HO
 ぼ,BO,Hiragana letter BO
-ぽ,PO,Hiragana letter PO`;
-
-var next = 
-`ま,MA,Hiragana letter MA
+ぽ,PO,Hiragana letter PO
+ま,MA,Hiragana letter MA
 み,MI,Hiragana letter MI
 む,MU,Hiragana letter MU
 め,ME,Hiragana letter ME
