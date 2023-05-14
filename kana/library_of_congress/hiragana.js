@@ -69,7 +69,5 @@ export const hiragana =
 れ,RE,Hiragana letter RE
 ろ,RO,Hiragana letter RO
 わ,WA,Hiragana letter WA
-ゐ,WI,Hiragana letter WI
-ゑ,WE,Hiragana letter WE
-を,WO,Hiragana letter WO
+を,O,Hiragana letter O
 ん,N,Hiragana letter N`;
