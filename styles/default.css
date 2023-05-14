@@ -20,6 +20,24 @@
 	color: blue;
 }
 
+.button-showchart {
+	background-color: pink;
+}
+#kana_chart > p {
+	margin: 0;
+}
+
+#kana_chart span {
+	width: 5em;
+	border-bottom: 1px solid #c7c5c5;
+	font-size: 2em;
+}
+
+#kana_chart span i {
+	font-size: 0.8em;
+	color: blue;
+}
+
 @media only screen and (max-width: 1100px) {
   #view_random {
 	font-size: 8em;

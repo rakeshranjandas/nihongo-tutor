@@ -7,9 +7,9 @@ function showRandowWord() {
 	generateRandomCharList();
 
 	showRandomWordInView(constructWord());
+	populateChart();
 
 	hideSoundText();
-
 	hideGetRandomButton();
 	showVerifySoundButton();
 }
@@ -129,6 +129,29 @@ function setSoundTextInView(voice) {
 	$("#view_sound").text(voice);
 }
 
+function populateChart() {
+	setChartContent(constructChartContent());
+}
+
+function constructChartContent() {
+	var char_set = getCharSet();
+	var html_content = "";
+
+	for (let i = 0; i < char_set.length; i++) {
+		html_content += `<p><span><b>${char_set[i].char}</b>&nbsp;&nbsp;&nbsp;<i>${char_set[i].sound}</i></span></p>`;
+	}
+
+	return html_content;
+}
+
+function setChartContent(html_content) {
+	$("#kana_chart").html(html_content);
+}
+
+function toggleChart() {
+	$("#kana_chart").toggle();
+	$("#show_kana").text($("#kana_chart").is(":visible") ? "Hide Kana": "Show Kana");
+}
 
 $(document).ready(function() {
 	showRandowWord();
