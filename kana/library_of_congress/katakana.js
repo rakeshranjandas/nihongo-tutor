@@ -9,8 +9,12 @@ export const katakana =
 ェ,E,Katakana letter small E
 エ,E,Katakana letter E
 ォ,O,Katakana letter small O
-オ,O,Katakana letter O
-カ,KA,Katakana letter KA
+オ,O,Katakana letter O`;
+
+
+let next = 
+
+`カ,KA,Katakana letter KA
 ガ,GA,Katakana letter GA
 キ,KI,Katakana letter KI
 ギ,GI,Katakana letter GI
