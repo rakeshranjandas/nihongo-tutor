@@ -23,6 +23,28 @@
 .button-showchart {
 	background-color: pink;
 }
+
+#popup_bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+#popup_content {
+	width: 50vw;
+	height: 50vh;
+	background-color: white;
+}
+
+#kana_select {
+	color: #ab9d58;;
+}
+
 #kana_chart > p {
 	margin: 0;
 }
@@ -61,7 +83,14 @@
   }
 
   #main_div {
-	margin: 0;
-	width: 100%;
+		margin: 0;
+		width: 100%;
+  }
+
+  #kana_select {
+    width: 40%;
+    height: 20%;
+    font-size: 2em;
+    text-align: center;
   }
 }
