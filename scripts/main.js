@@ -1,6 +1,12 @@
 const max_word_len = 5;
 
-var randomCharList = [];
+var random_char_list = [];
+
+var current_kana = null;
+
+function setCurrentKana(selected_kana_set) {
+	current_kana = selected_kana_set;
+}
 
 function showRandowWord() {
 
@@ -19,11 +25,11 @@ function generateRandomCharList() {
 	var char_set = getCharSet();
 	var word_length = getRandomWithin(Math.min(max_word_len, char_set.length)) + 1;
 
-	clearList(randomCharList);
+	clearList(random_char_list);
 
 	for (let i = 0; i < word_length; i++) {
 		var randomIndex = getRandomWithin(char_set.length);
-		randomCharList.push(char_set[randomIndex]);
+		random_char_list.push(char_set[randomIndex]);
 	}
 }
 
@@ -36,7 +42,7 @@ function getRandomWithin(max_len) {
 }
 
 function getCharSet() {
-	return kana_set;
+	return current_kana;
 	// return dummySet();
 }
 
@@ -72,8 +78,8 @@ function dummySet() {
 function constructWord() {
 	var word = "";
 
-	for (let i = 0; i < randomCharList.length; i++) {
-		word += randomCharList[i].char + " ";
+	for (let i = 0; i < random_char_list.length; i++) {
+		word += random_char_list[i].char + " ";
 	}
 
 	return word.trim();
@@ -118,8 +124,8 @@ function showSoundText() {
 function constructSoundText() {
 	var sound = "";
 
-	for (let i = 0; i < randomCharList.length; i++) {
-		sound += randomCharList[i].sound + "  ";
+	for (let i = 0; i < random_char_list.length; i++) {
+		sound += random_char_list[i].sound + "  ";
 	}
 
 	return sound.trim();
@@ -154,5 +160,22 @@ function toggleChart() {
 }
 
 $(document).ready(function() {
-	showRandowWord();
+	showHiragana();
 })
+
+function showHiragana() {
+	setCurrentKana(kana_set.hiragana);
+	showRandowWord();
+}
+
+function showKatakana() {
+	setCurrentKana(kana_set.katakana);
+	showRandowWord();
+}
+
+function changeKana(tis) {
+	switch(tis.value) {
+		case "hiragana": showHiragana(); break;
+		case "katakana": showKatakana(); break;
+	}
+}

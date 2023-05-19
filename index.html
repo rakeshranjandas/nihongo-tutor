@@ -14,6 +14,13 @@
 <body>
 
 	<div class="container" id="main_div">
+		<p>
+			<select onchange="changeKana(this);">
+				<option value="hiragana">Hiragana</option>
+				<option value="katakana">Katakana</option>
+			</select>
+		</p>
+
 		<p id="view_box" title="" tabindex="0" onclick="verifySound()">
 			<span id="view_random"></span>
 			<span id="view_sound"></span>
@@ -38,7 +45,12 @@
 
 	<script type="module">
 		import { kana_importer } from "./kana/library_of_congress/import_kana.js";
-		window.kana_set = kana_importer.hiragana();
+		
+		window.kana_set = {
+			hiragana: kana_importer.hiragana(),
+			katakana: kana_importer.katakana(),
+		}
+
 	</script>
 
 	<script src="scripts/main.js"></script>
