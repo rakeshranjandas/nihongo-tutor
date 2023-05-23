@@ -1,20 +1,11 @@
 export const katakana = 
 
-`ァ,A,Katakana letter small A
-ア,A,Katakana letter A
-ィ,I,Katakana letter small I
+`ア,A,Katakana letter A
 イ,I,Katakana letter I
-ゥ,U,Katakana letter small U
 ウ,U,Katakana letter U
-ェ,E,Katakana letter small E
 エ,E,Katakana letter E
-ォ,O,Katakana letter small O
-オ,O,Katakana letter O`;
-
-
-let next = 
-
-`カ,KA,Katakana letter KA
+オ,O,Katakana letter O
+カ,KA,Katakana letter KA
 ガ,GA,Katakana letter GA
 キ,KI,Katakana letter KI
 ギ,GI,Katakana letter GI
@@ -33,8 +24,11 @@ let next =
 セ,SE,Katakana letter SE
 ゼ,ZE,Katakana letter ZE
 ソ,SO,Katakana letter SO
-ゾ,ZO,Katakana letter ZO
-タ,TA,Katakana letter TA
+ゾ,ZO,Katakana letter ZO`;
+
+let next = 
+
+`タ,TA,Katakana letter TA
 ダ,DA,Katakana letter DA
 チ,TI,Katakana letter TI
 ヂ,DI,Katakana letter DI
