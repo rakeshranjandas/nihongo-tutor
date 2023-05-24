@@ -24,11 +24,8 @@ export const katakana =
 セ,SE,Katakana letter SE
 ゼ,ZE,Katakana letter ZE
 ソ,SO,Katakana letter SO
-ゾ,ZO,Katakana letter ZO`;
-
-let next = 
-
-`タ,TA,Katakana letter TA
+ゾ,ZO,Katakana letter ZO
+タ,TA,Katakana letter TA
 ダ,DA,Katakana letter DA
 チ,TI,Katakana letter TI
 ヂ,DI,Katakana letter DI
@@ -58,8 +55,11 @@ let next =
 ペ,PE,Katakana letter PE
 ホ,HO,Katakana letter HO
 ボ,BO,Katakana letter BO
-ポ,PO,Katakana letter PO
-マ,MA,Katakana letter MA
+ポ,PO,Katakana letter PO`;
+
+let next = 
+
+`マ,MA,Katakana letter MA
 ミ,MI,Katakana letter MI
 ム,MU,Katakana letter MU
 メ,ME,Katakana letter ME
