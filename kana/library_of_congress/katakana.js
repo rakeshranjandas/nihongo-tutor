@@ -46,7 +46,7 @@ export const katakana =
 ヒ,HI,Katakana letter HI
 ビ,BI,Katakana letter BI
 ピ,PI,Katakana letter PI
-フ,HU,Katakana letter HU
+フ,HU,Katakana letter FU
 ブ,BU,Katakana letter BU
 プ,PU,Katakana letter PU
 ヘ,HE,Katakana letter HE
