@@ -27,11 +27,10 @@ export const katakana =
 ゾ,ZO,Katakana letter ZO
 タ,TA,Katakana letter TA
 ダ,DA,Katakana letter DA
-チ,TI,Katakana letter TI
-ヂ,DI,Katakana letter DI
-ッ,TU,Katakana letter small TU
-ツ,TU,Katakana letter TU
-ヅ,DU,Katakana letter DU
+チ,TI,Katakana letter CHI
+ヂ,DI,Katakana letter JI
+ツ,TU,Katakana letter TSU
+ヅ,DU,Katakana letter ZU
 テ,TE,Katakana letter TE
 デ,DE,Katakana letter DE
 ト,TO,Katakana letter TO
