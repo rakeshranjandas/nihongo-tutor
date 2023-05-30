@@ -54,31 +54,24 @@ export const katakana =
 ペ,PE,Katakana letter PE
 ホ,HO,Katakana letter HO
 ボ,BO,Katakana letter BO
-ポ,PO,Katakana letter PO`;
-
-let next = 
-
-`マ,MA,Katakana letter MA
+ポ,PO,Katakana letter PO
+マ,MA,Katakana letter MA
 ミ,MI,Katakana letter MI
 ム,MU,Katakana letter MU
 メ,ME,Katakana letter ME
 モ,MO,Katakana letter MO
-ャ,YA,Katakana letter small YA
 ヤ,YA,Katakana letter YA
-ュ,YU,Katakana letter small YU
 ユ,YU,Katakana letter YU
-ョ,YO,Katakana letter small YO
 ヨ,YO,Katakana letter YO
 ラ,RA,Katakana letter RA
 リ,RI,Katakana letter RI
 ル,RU,Katakana letter RU
 レ,RE,Katakana letter RE
 ロ,RO,Katakana letter RO
-ヮ,WA,Katakana letter small WA
 ワ,WA,Katakana letter WA
 ヰ,WI,Katakana letter WI
 ヱ,WE,Katakana letter WE
-ヲ,WO,Katakana letter WO
+ヲ,WO,Katakana letter O
 ン,N,Katakana letter N
 ヴ,VU,Katakana letter VU
 ヵ,KA,Katakana letter small KA
