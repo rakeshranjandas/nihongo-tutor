@@ -27,10 +27,10 @@ export const katakana =
 ゾ,ZO,Katakana letter ZO
 タ,TA,Katakana letter TA
 ダ,DA,Katakana letter DA
-チ,TI,Katakana letter CHI
-ヂ,DI,Katakana letter JI
-ツ,TU,Katakana letter TSU
-ヅ,DU,Katakana letter ZU
+チ,CHI,Katakana letter CHI
+ヂ,JI,Katakana letter JI
+ツ,TSU,Katakana letter TSU
+ヅ,ZU,Katakana letter ZU
 テ,TE,Katakana letter TE
 デ,DE,Katakana letter DE
 ト,TO,Katakana letter TO
@@ -69,10 +69,11 @@ export const katakana =
 レ,RE,Katakana letter RE
 ロ,RO,Katakana letter RO
 ワ,WA,Katakana letter WA
-ヰ,WI,Katakana letter WI
-ヱ,WE,Katakana letter WE
 ヲ,WO,Katakana letter O
-ン,N,Katakana letter N
+ン,N,Katakana letter N`
+
+let next = 
+
+`ヰ,WI,Katakana letter WI
+ヱ,WE,Katakana letter WE
 ヴ,VU,Katakana letter VU
-ヵ,KA,Katakana letter small KA
-ヶ,KE,Katakana letter small KE`
