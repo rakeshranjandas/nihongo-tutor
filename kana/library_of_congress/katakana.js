@@ -76,4 +76,4 @@ let next =
 
 `ヰ,WI,Katakana letter WI
 ヱ,WE,Katakana letter WE
-ヴ,VU,Katakana letter VU
+ヴ,VU,Katakana letter VU`
