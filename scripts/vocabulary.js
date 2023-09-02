@@ -31,6 +31,18 @@ const App = {
 
 		$('#get_random_button').show();
 		$('#verify_meaning_button').hide();
+	},
+
+	showFilter: function() {
+		$('#filter_div').show();
+		$('#show_filter').hide();
+		$('#hide_filter').show();
+	},
+
+	hideFilter: function() {
+		$('#filter_div').hide();
+		$('#show_filter').show();
+		$('#hide_filter').hide();
 	}
 
 };

@@ -15,12 +15,25 @@
 <body>
 
 	<div class="container" id="main_div">
-		<!-- <p>
-			<select id="kana_select" onchange="changeKana(this);">
-				<option value="hiragana">Hiragana</option>
-				<option value="katakana">Katakana</option>
-			</select>
-		</p> -->
+		
+
+		<p>
+			<button onclick="App.showFilter()" id="show_filter">Show Filter</button>
+			<button onclick="App.hideFilter()" id="hide_filter" style="display:none">Hide Filter</button>
+		</p>
+
+		<div id="filter_div" style="display:none">
+			<p><b>Chapter</b> from:<input type="text"> to:<input type="text"></p>
+			<p>
+				<b>Category</b> 
+				V1:<input type="checkbox"> 
+				V1:<input type="checkbox"> 
+				V1:<input type="checkbox">
+				V1:<input type="checkbox">
+				V1:<input type="checkbox">
+			</p>
+
+		</div>
 
 		<p id="view_box" title="" tabindex="0" onclick="App.answer()">
 			<span id="view_random"></span>
