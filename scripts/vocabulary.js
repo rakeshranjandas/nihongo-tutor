@@ -13,8 +13,24 @@ const App = {
 		};
 
 		FilterCriteria.set(criteria);
-		
 		Container.applyFilter();
+	},
+
+	ask: function() {
+		let word = Container.getRandom();
+
+		CardView.setWord(word);
+		CardView.showQuestion();
+
+		$('#get_random_button').hide();
+		$('#verify_meaning_button').show();
+	},
+
+	answer: function() {
+		CardView.showAnswer();
+
+		$('#get_random_button').show();
+		$('#verify_meaning_button').hide();
 	}
 
 };
@@ -70,7 +86,33 @@ const FilterCriteria = {
 }
 
 
+const CardView = {
+
+	_word: {},
+	_view: { 'ask_by_field': 'romaji' },
+
+	setWord: function(word) {
+		this._word = word;
+	},
+
+	setView: function(view) {
+		this._view = view;
+	},
+
+	showQuestion: function() {
+		$('#view_meaning').text('');
+		$('#view_random').text(this._word[this._view.ask_by_field]);
+	},
+
+	showAnswer: function() {
+		$('#view_meaning').text(JSON.stringify(this._word));
+	}
+}
+
+
 
 $(document).ready(function() {
 	App.init();
+
+	App.ask();
 })

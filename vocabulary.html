@@ -22,17 +22,17 @@
 			</select>
 		</p>
 
-		<p id="view_box" title="" tabindex="0" onclick="verifySound()">
+		<p id="view_box" title="" tabindex="0" onclick="App.answer()">
 			<span id="view_random"></span>
-			<span id="view_sound"></span>
+			<span id="view_meaning"></span>
 		</p>
 
 		<p>
-			<button class="button-primary" onclick="showRandowWord()" id="get_random_button"> Show Next </button>
+			<button class="button-primary" onclick="App.ask()" id="get_random_button"> Show Next </button>
 		</p>
 
 		<p>
-			<button onclick="verifySound()" style="display:none" id="verify_sound_button"> Verify Sound </button>
+			<button onclick="App.answer()" style="display:none" id="verify_meaning_button"> Verify Meaning </button>
 		</p>
 
 		<p>
