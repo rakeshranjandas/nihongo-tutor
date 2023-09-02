@@ -10,6 +10,8 @@ const App = {
 		Container.applyFilter();
 
 		$('#filter_results_size').text(Container.getFiltered().length + " words");
+
+		this.ask();
 	},
 
 	getFilterCriteria: function() {
@@ -81,12 +83,9 @@ const App = {
 	categoryAllAction: function(tis) {
 		if (tis.checked) {
 			$('.filterCategoryCheckbox').prop('checked', true);
-		}
-
-		this.allCheckboxCheck();
-
-		if ($('.filterCategoryCheckbox:checked').length === $('.filterCategoryCheckbox').length) {
-			$('.filterCategoryAllCheckbox').prop('checked', true);
+		
+		} else {
+			$('.filterCategoryCheckbox').prop('checked', false);
 		}
 	},
 

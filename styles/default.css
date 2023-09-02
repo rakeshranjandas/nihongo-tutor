@@ -96,8 +96,6 @@
 }
 
 
-
-
 #view_meaning, #view_chapter, #view_category {
 	display: block;
 	min-height: 24px;
@@ -120,4 +118,8 @@
 #filter_div label {
 	display: inline;
 	margin-left: 10px;
+}
+
+#filter_results_size {
+	color: red;
 }
