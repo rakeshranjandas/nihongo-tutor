@@ -5,15 +5,48 @@ const App = {
 		Container.init();
 	},
 
-	setFilter: function() {
-
-		let criteria = {
-			'chapter': ['1', '2', '3'],
-			'category': ['V1', 'V2', 'Na-adj']
-		};
-
-		FilterCriteria.set(criteria);
+	filter: function() {
+		FilterCriteria.set(this.getFilterCriteria());
 		Container.applyFilter();
+
+		$('#filter_results_size').text(Container.getFiltered().length + " words");
+	},
+
+	getFilterCriteria: function() {
+		return {
+			chapter: this.getChapterFilterCriteria(),
+			category: this.getCategoryFilterCriteria(),
+		}
+	},
+
+	getChapterFilterCriteria: function() {
+
+		let allowed = []
+
+		let input_low = parseInt($('#filter_chapter_from').val());
+		let input_high = parseInt($('#filter_chapter_to').val());
+
+		let low = isNaN(input_low) ? 0: input_low;
+		let high = isNaN(input_high) ? 1000: input_high;
+
+		for (let i = low; i <= high; i++) allowed.push(""+i);
+
+		return allowed;
+	},
+
+	getCategoryFilterCriteria: function() {
+		
+		let allowed = [];
+
+		$('.filterCategoryCheckbox:checked').each(function() {
+			allowed.push($(this).data('value'));
+		})
+
+		if ($('.filterCategoryAllCheckbox').is(':checked')) {
+			allowed.push("");
+		}
+
+		return allowed;
 	},
 
 	ask: function() {
@@ -122,7 +155,11 @@ const FilterCriteria = {
 	},
 
 	pass: function(item) {
-		return this._criteria.chapter.includes(item.chapter) && this._criteria.category.includes(item.category); 
+
+		if (!item.category) item.category = "";
+
+		return this._criteria.chapter.includes(item.chapter.toString().toLowerCase()) 
+			&& this._criteria.category.includes(item.category.toLowerCase()); 
 	}
 }
 
