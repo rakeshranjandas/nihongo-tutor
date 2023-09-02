@@ -121,12 +121,12 @@ const Container = {
 	_container_filtered: [],
 
 	init: function() {
-		this._container = structuredClone(all_vocabulary);
+		this._container_all = structuredClone(all_vocabulary);
 		this._container_filtered = structuredClone(all_vocabulary);
 	},
 
 	getAll: function() {
-		return this._container;
+		return this._container_all;
 	},
 
 	getFiltered: function() {
@@ -136,14 +136,18 @@ const Container = {
 	applyFilter: function() {
 		this._container_filtered = [];
 
-		for (let i = 0; i < this._container.length; i++) {
-			if (FilterCriteria.pass(this._container[i])) {
-				this._container_filtered.push(this._container[i]);
+		for (let i = 0; i < this._container_all.length; i++) {
+			if (FilterCriteria.pass(this._container_all[i])) {
+				this._container_filtered.push(this._container_all[i]);
 			}
 		}
 	},
 
 	getRandom: function() {
+
+		if (this._container_filtered.length === 0)
+			return false;
+
 		let random_index = Math.floor(Math.random() * this._container_filtered.length);
 		return this._container_filtered[random_index];
 	}
