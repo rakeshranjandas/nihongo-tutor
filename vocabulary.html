@@ -29,13 +29,15 @@
 			</p>
 			<p>
 				<i>Category</i>
-				<label>All:<input type="checkbox" class="filterCategoryAllCheckbox" onclick="App.categoryAllAction(this);"></label>
-				<label>V1:<input type="checkbox" class="filterCategoryCheckbox" data-value="v1" onclick="App.categoryAction(this);"></label> 
-				<label>V2:<input type="checkbox" class="filterCategoryCheckbox" data-value="v2" onclick="App.categoryAction(this);"></label>
-				<label>V3:<input type="checkbox" class="filterCategoryCheckbox" data-value="v3" onclick="App.categoryAction(this);"></label>
-				<label>I-adj:<input type="checkbox" class="filterCategoryCheckbox" data-value="i" onclick="App.categoryAction(this);"></label>
-				<label>Na-adj:<input type="checkbox" class="filterCategoryCheckbox" data-value="na" onclick="App.categoryAction(this);"></label>
+				<label>All:<input type="checkbox" checked class="filterCategoryAllCheckbox" onclick="App.categoryAllAction(this);"></label>
+				<label>V1:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v1" onclick="App.categoryAction(this);"></label> 
+				<label>V2:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v2" onclick="App.categoryAction(this);"></label>
+				<label>V3:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v3" onclick="App.categoryAction(this);"></label>
+				<label>I-adj:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="i" onclick="App.categoryAction(this);"></label>
+				<label>Na-adj:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="na" onclick="App.categoryAction(this);"></label>
 			</p>
+
+			<p id="filter_results_size"></p>
 
 			<button onclick="App.filter()" class="button-primary">Apply</button>
 
