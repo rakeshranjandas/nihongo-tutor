@@ -108,3 +108,16 @@
 #view_meaning > b, #view_chapter > b, #view_category > b {
 	color: red;
 }
+
+#hide_filter_button {
+	background-color: red;
+}
+
+#filter_div input[type="text"] {
+	width: 50px;
+}
+
+#filter_div label {
+	display: inline;
+	margin-left: 10px;
+}

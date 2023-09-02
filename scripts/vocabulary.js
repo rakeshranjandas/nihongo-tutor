@@ -35,14 +35,43 @@ const App = {
 
 	showFilter: function() {
 		$('#filter_div').show();
-		$('#show_filter').hide();
-		$('#hide_filter').show();
+		$('#show_filter_button').hide();
+		$('#hide_filter_button').show();
 	},
 
 	hideFilter: function() {
 		$('#filter_div').hide();
-		$('#show_filter').show();
-		$('#hide_filter').hide();
+		$('#show_filter_button').show();
+		$('#hide_filter_button').hide();
+	},
+
+	categoryAllAction: function(tis) {
+		if (tis.checked) {
+			$('.filterCategoryCheckbox').prop('checked', true);
+		}
+
+		this.allCheckboxCheck();
+
+		if ($('.filterCategoryCheckbox:checked').length === $('.filterCategoryCheckbox').length) {
+			$('.filterCategoryAllCheckbox').prop('checked', true);
+		}
+	},
+
+	categoryAction: function(tis) {
+		
+		if (!tis.checked) {
+			$('.filterCategoryAllCheckbox').prop('checked', false);
+			return;
+		}
+
+		this.allCheckboxCheck();
+	},
+
+	allCheckboxCheck: function() {
+
+		if ($('.filterCategoryCheckbox:checked').length === $('.filterCategoryCheckbox').length) {
+			$('.filterCategoryAllCheckbox').prop('checked', true);
+		}
 	}
 
 };
