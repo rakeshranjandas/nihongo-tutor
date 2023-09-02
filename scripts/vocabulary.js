@@ -3,6 +3,18 @@ const App = {
 
 	init: function() {
 		Container.init();
+	},
+
+	setFilter: function() {
+
+		let criteria = {
+			'chapter': ['1', '2', '3'],
+			'category': ['V1', 'V2', 'Na-adj']
+		};
+
+		FilterCriteria.set(criteria);
+		
+		Container.applyFilter();
 	}
 
 };
@@ -53,7 +65,7 @@ const FilterCriteria = {
 	},
 
 	pass: function(item) {
-		return true;
+		return this._criteria.chapter.includes(item.chapter) && this._criteria.category.includes(item.category); 
 	}
 }
 
