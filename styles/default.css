@@ -24,23 +24,6 @@
 	background-color: pink;
 }
 
-#popup_bg {
-    width: 100vw;
-    height: 100vh;
-    background-color: gray;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
-}
-
-#popup_content {
-	width: 50vw;
-	height: 50vh;
-	background-color: white;
-}
-
 #kana_select {
 	color: #ab9d58;;
 }
