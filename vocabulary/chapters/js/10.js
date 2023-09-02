@@ -1,0 +1,49 @@
+export const data = 
+
+`います[が] _ _ exist, be (referring to animate things)
+あります[が] _  _ exist, be (referring to inanimate things)
+いろいろ[な] _ 色々[な] _ various
+おとこのひと _ 男の人 _ man
+おんなのひと _ 女の人 _ woman
+おとこのこ _ 男の子 _ boy
+おんなのこ _ 女の子 _ girl
+いぬ _ 犬 _ dog
+ねこ _ 猫 _ cat
+き _ 木 _ tree
+もの _ 物 _ thing
+フィルム _ _ film
+でんち _ 電池 _ battery
+はこ _ 箱 _ box
+スイッチ _ _ switch
+れいぞうこ _ 冷蔵庫 _ refrigerator
+テーブル _ _ table
+ベッド _ _ bed
+たな _ 棚 _ shelf
+ドア _ _ door
+まど _ 窓 _ window
+ポスト _ _ mailbox, postbox
+ビル _ _ building
+こうえん _ 公園 _ park
+きっさてん _ 喫茶店 _ coffee shop
+ほんや _ 本屋 _ bookstore
+~や ~屋 _ _~ store
+のりば _ 乗り場 _ a fixed place to catch taxis, trains, etc.
+けん _ 県 _ prefecture
+うえ _ 上 _ on, above, over
+した _ 下 _ under, below, beneath
+まえ _ 前 _ front, before
+うしろ _ 後ろ _ back, behind
+みぎ _ 右 _ right [side]
+ひだり _ 左 _ left [side]
+なか _ 中 _ in, inside
+そと _ 外 _ outside
+となり _ 隣 _ next, next door
+ちかく _ 近く _ near, vicinity
+あいだ _ 間 _ between, among
+や[など] _ _~, ~, and so on
+いちばん~ _ 一番~ _ the most ~ (いちばん うえ: the top)
+~だんめ _ ~段目 _ the ~th shelf (だん is the counter for shelves)
+[どうも]すみません。_ _ Thank you.
+チリソース _ _ chilli sauce
+おく _ 奥 _ _ the back
+スパイスコーナー _ _ spice corner`

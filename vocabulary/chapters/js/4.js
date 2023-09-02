@@ -1,0 +1,59 @@
+export const data = 
+
+`おきます _ 起きます _ get up, wake up
+ねます _ 寝ます _ sleep, go to bed
+はたらきます _ 働きます _ work
+やすみます _ 休みます _ take a rest, take a holiday
+べんきょうします _ 勉強します _ study
+おわります _ 終わります _ finish
+デパート _ _ department store
+ぎんこう _ 銀行 _ bank
+ゆうびんきょく _ 郵便局 _ post office
+としょかん _ 図書館 _ library
+びじゅつかん _ 美術館 _ art museum
+いま _ 今 _ now
+~じ _ ~時 _ ~ o'clock
+~ふん (〜ぷん) _ ~分 _ ~ minute
+はん _ 半 _ half
+なんじ _ 何時 _ what time
+なんぷん _ 何分 _ what minute
+ごぜん _ 午前 _ a.m., morning
+ごご _ 午後 _ p.m., afternoon
+あさ _ 朝 _ morning
+ひる _ 昼 _ daytime, noon
+ばん(よる) _ 晩(夜) _ night, evening
+おととい _ 一昨日 _ the day before yesterday
+きのう _ 昨日 _ yesterday
+きょう _ 今日 _ today
+あした _ 明日 _ tomorrow
+あさって _ 明後日 _ the day after tomorrow
+けさ _ 今朝 _ this morning
+こんばん _ 今晩 _ this evening, tonight
+やすみ _ 休み _ rest, a holiday, a day off
+ひるやすみ _ 昼休み _ lunchtime
+まいあさ _ 毎朝 _ every morning
+まいばん _ 毎晩 _ every evening
+まいにち _ 毎日 _ every day
+げつようび _ 月曜日 _ Monday
+かようび _ 火曜日 _ Tuesday
+すいようび _ 水曜日 _ Wednesday
+もくようび _ 木曜日 _ Thursday
+きんようび _ 金曜日 _ Friday
+どようび _ 土曜日 _ Saturday
+にちようび _ 日曜日 _ Sunday
+なんようび _ 何曜日 _ what day of the week
+ばんごう _ 番号 _ number
+なんばん _ 何番 _ what number
+~から _ _ from ~
+~まで _ _ up to ~, until ~
+と _ _ and (used to connect nouns)
+そちら _ _ your place
+たいへんですね。 _ 大変ですね。 _ That's tough, isn't it? (used when expressing sympathy)
+えーと _ _ well, let me see
+おねがいします。 _ お願いします。 _ Please. (lit. ask for a favor)
+かしこまりました。 _ _ Certainly (sir, madam).
+おといあわせのばんごう _ お問い合わせの番号 _ the number being inquired about
+[どうも]ありがとうごさいした。 _ _ Thank you very much.`
+
+
+
