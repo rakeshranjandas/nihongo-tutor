@@ -52,7 +52,13 @@ const App = {
 	},
 
 	ask: function() {
+
 		let word = Container.getRandom();
+
+		if (word === false) {
+			alert('0 words');
+			return;
+		}
 
 		CardView.setWord(word);
 		CardView.showQuestion();
