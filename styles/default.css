@@ -94,3 +94,17 @@
     text-align: center;
   }
 }
+
+
+
+
+#view_meaning, #view_chapter, #view_category {
+	display: block;
+	min-height: 24px;
+	min-width: 20px;
+	color: gray;
+}
+
+#view_meaning > b, #view_chapter > b, #view_category > b {
+	color: red;
+}

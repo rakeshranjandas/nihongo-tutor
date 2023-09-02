@@ -15,16 +15,18 @@
 <body>
 
 	<div class="container" id="main_div">
-		<p>
+		<!-- <p>
 			<select id="kana_select" onchange="changeKana(this);">
 				<option value="hiragana">Hiragana</option>
 				<option value="katakana">Katakana</option>
 			</select>
-		</p>
+		</p> -->
 
 		<p id="view_box" title="" tabindex="0" onclick="App.answer()">
 			<span id="view_random"></span>
 			<span id="view_meaning"></span>
+			<span id="view_chapter"></span>
+			<span id="view_category"></span>
 		</p>
 
 		<p>
@@ -35,11 +37,11 @@
 			<button onclick="App.answer()" style="display:none" id="verify_meaning_button"> Verify Meaning </button>
 		</p>
 
-		<p>
+		<!-- <p>
 			<button class="button-showchart" onclick="toggleChart()" id="show_kana"> Show Kana </button>
-		</p>
+		</p> -->
 
-		<div id="kana_chart" style="display:none"></div>
+		<!-- <div id="kana_chart" style="display:none"></div> -->
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
