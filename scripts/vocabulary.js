@@ -26,8 +26,8 @@ const App = {
 		let input_low = parseInt($('#filter_chapter_from').val());
 		let input_high = parseInt($('#filter_chapter_to').val());
 
-		let low = isNaN(input_low) ? 0: input_low;
-		let high = isNaN(input_high) ? 1000: input_high;
+		let low = Math.max(0, isNaN(input_low) ? 0: input_low);
+		let high = Math.min(1000, isNaN(input_high) ? 1000: input_high);
 
 		for (let i = low; i <= high; i++) allowed.push(""+i);
 
