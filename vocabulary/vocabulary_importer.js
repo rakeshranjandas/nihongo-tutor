@@ -24,16 +24,25 @@ import { data as chapter_22 } from "./chapters/js/22.js"
 import { data as chapter_23 } from "./chapters/js/23.js"
 import { data as chapter_24 } from "./chapters/js/24.js"
 import { data as chapter_25 } from "./chapters/js/25.js"
+import { data as chapter_26 } from "./chapters/js/26.js"
+import { data as chapter_27 } from "./chapters/js/27.js"
 
 export const vocabulary_importer = {
 
 	get: function() {
 
-		const total_chapters = 25;
+		const total_chapters = 1000;
 		let all_words = [];
 
 		for (let i = 1; i <= total_chapters; i++) {
-			let chapter_words = extractAndPack(eval('chapter_' + i), i);
+
+			let chapter = 'chapter_' + i;
+
+			let chapterWords = eval("typeof("+chapter+")") === 'undefined' ? false : eval(chapter);
+
+			if (!chapterWords) continue;
+
+			let chapter_words = extractAndPack(chapterWords, i);
 
 			for (let j = 0; j < chapter_words.length; j++) {
 				all_words.push(chapter_words[j]);
