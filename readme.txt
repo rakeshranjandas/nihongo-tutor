@@ -1,20 +1,35 @@
 
 
-HOW TO ADD NEW VOCABULARY CHAPTER
-----------------------------------
+HOW TO ADD A NEW VOCABULARY CHAPTER
+------------------------------------
 
 1) Add the list in "vocabulary/chapters/js/{#new_chapter}.js"
 
-	- The format of the list is as follows:
+	(I) The format of the list is as follows:
 
-		a) hiragana_kanji_english_category
+		a) hiragana _ kanji _ english _ category
 
-		b) category is optional, rest are mandatory
+			**separated by underscore(_)
+
+
+		b) category is optional, rest are mandatory. 
+
+			> hiragana _ kanji _ english         <VALID - no category>
+
+			> hiragana _ kanji _ category        <INVALID - missing english>
+
+
+			In case there is no Kanji, it has to be left blank. 
+
+			> hiragana _ _ english _ category      <VALID - although no kanji, there is blank>
+
+			> hiragana _ english _ category		   <INVALID - no blank for kanji>
+
 
 		c) category values are - v1, v2, v3, i, na
 
 
-	- Export it by "export const data". Refer previous js files.
+	(II) Export it by "export const data". Refer previous js files.
 
 
 2) Import in "vocabulary/vocabulary_importer.js".
