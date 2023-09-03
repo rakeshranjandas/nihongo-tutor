@@ -1,0 +1,7 @@
+
+
+1) Convert key "romaji" to "hiragana"
+
+2) "Show next" button jumps on reveal (mobile and web)
+
+3) FEATURE - English to Japanese Quiz
