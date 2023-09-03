@@ -9,12 +9,12 @@ const App = {
 		FilterCriteria.set(this.getFilterCriteria());
 		Container.applyFilter();
 
+		$('#filter_results_size').text(Container.getFiltered().length + " words");
+		
 		if (Container.getFiltered().length === 0) {
 			alert('0 words');
 			return;
 		}
-
-		$('#filter_results_size').text(Container.getFiltered().length + " words");
 
 		this.ask();
 		this.hideFilter();
