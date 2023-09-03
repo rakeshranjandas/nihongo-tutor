@@ -1,10 +1,10 @@
 export const data = 
 
-`いります [ビザが~] _ 要ります _ need, require [a visa]
-しらべます _ 調べます _ check, investigate
-なおします _ 直します _ repair, correct
-しゅうりします _ 修理します _ repair
-でんわします _ 電話します _ phone
+`いります [ビザが~] _ 要ります _ need, require [a visa] _ v1
+しらべます _ 調べます _ check, investigate _ v2
+なおします _ 直します _ repair, correct _ v1
+しゅうりします _ 修理します _ repair _ v3
+でんわします _ 電話します _ phone _ v3
 ぼく _ 僕 _ I (an informal equivalent of わたし used by men)
 きみ _ 君 _ you (an informal equivalent of あなた used by men)
 ~くん _ ~君 _ Mr. (an informal equivalent of ~さん used by men)

@@ -1,16 +1,16 @@
 export const data = 
 
-`たべます _ 食べます _ eat
-のみます _ 飲みます _ drink
-すいます[たばこを~] _ 吸います _ smoke [a cigarette]
-みます _ 見ます _ see, look at, watch
-ききます _ 聞きます _ hear, listen
-よみます _ 読みます _ read
-かきます _ 書きます _ write, draw, paint
-かいます _ 買います _ buy
-とります[しゃしんを ~] _ 撮ります _ take [a photograph]
-します _ _ do
-あいます[ともだちに ~] _ 会います _ meet [a friend]
+`たべます _ 食べます _ eat _ v2
+のみます _ 飲みます _ drink _ v1
+すいます[たばこを~] _ 吸います _ smoke [a cigarette] _ v1
+みます _ 見ます _ see, look at, watch _ v2
+ききます _ 聞きます _ hear, listen _ v1
+よみます _ 読みます _ read _ v1
+かきます _ 書きます _ write, draw, paint _ v1
+かいます _ 買います _ buy _ v1
+とります[しゃしんを ~] _ 撮ります _ take [a photograph] _ v1
+します _ _ do _ v3
+あいます[ともだちに ~] _ 会います _ meet [a friend] _ v1
 ごはん _ ご飯 _ a meal, cooked rice
 あさごはん _ 朝ごはん _ breakfast
 ひるごはん _ 昼ごはん _ lunch

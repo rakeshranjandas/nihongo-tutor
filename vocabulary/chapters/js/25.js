@@ -1,9 +1,9 @@
 export const data = 
 
-`かんがえます _ 考えます _ think, consider
-つきます[えきに~] _ 着きます _ arrive [at the station]
-りゅうがくします _ 留学します _ study abroad
-とります[としを~] _ 取ります _ grow old
+`かんがえます _ 考えます _ think, consider _ v2
+つきます[えきに~] _ 着きます _ arrive [at the station] _ v1
+りゅうがくします _ 留学します _ study abroad _ v3
+とります[としを~] _ 取ります _ grow old _ v1
 いなか _ 田舎 _ countryside, hometown
 たいしかん _ 大使館 _ embassy
 グループ _ _ group

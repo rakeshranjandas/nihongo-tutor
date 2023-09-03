@@ -1,21 +1,21 @@
 export const data = 
 
-`あそびます _ 遊びます _ enjoy oneself, play
-およぎます _ 泳ぎます _ swim
-むかえます _ 迎えます _ go to meet, welcome
-つかれます _ 疲れます _ get tired
-だします[てがみを~] _ 出します _ send [a letter]
-はいります[きっさてんに~] _ 入ります _ enter [a coffee shop]
-でます[きっさてんを~] _ 出ます _ go out [of a coffee shop]
-けっこんします _ 結婚します _ marry, get married
-かいものします _ 買い物します _ do shopping
-しょくじします _ 食事します _ have a meal, dine
-さんぽします[こうえんを~] _ 散歩します _ take a walk [in a park]
-たいへん[な] _ 大変[な] _ hard, tough, severe, awful
-ほしい _ 欲しい _ want (something)
-さびしい _ 寂しい _ lonely
-ひろい _ 広い _ wide, spacious
-せまい _ 狭い _ narrow, small (room, etc.)
+`あそびます _ 遊びます _ enjoy oneself, play _ v1
+およぎます _ 泳ぎます _ swim _ v1
+むかえます _ 迎えます _ go to meet, welcome _ v2
+つかれます _ 疲れます _ get tired _ v2
+だします[てがみを~] _ 出します _ send [a letter] _ v1
+はいります[きっさてんに~] _ 入ります _ enter [a coffee shop] _ v1
+でます[きっさてんを~] _ 出ます _ go out [of a coffee shop] _ v2
+けっこんします _ 結婚します _ marry, get married _ v1
+かいものします _ 買い物します _ do shopping _ v3
+しょくじします _ 食事します _ have a meal, dine _ v3
+さんぽします[こうえんを~] _ 散歩します _ take a walk [in a park] _ v3
+たいへん[な] _ 大変[な] _ hard, tough, severe, awful _ na
+ほしい _ 欲しい _ want (something) _ i
+さびしい _ 寂しい _ lonely _ i
+ひろい _ 広い _ wide, spacious _ i
+せまい _ 狭い _ narrow, small (room, etc.) _ i
 しやくしょ _ 市役所 _ municipal office, city hall
 プール _ _ swimming pool
 かわ _ 川 _ river

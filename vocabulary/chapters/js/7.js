@@ -1,14 +1,14 @@
 export const data = 
 
-`きります _ 切ります _ cut, slice
-おくります _ 送ります _ send
-あげます _ 上げる _ give
-もらいます _ 貰います _ receive
-かします _ 貨します _ lend
-かります _ 借ります _ borrow
-おしえます _ 教えます _ teach
-ならいます _ 習います _ learn
-かけます[でんわを ~] _ 架けます _ make [a telephone call]
+`きります _ 切ります _ cut, slice_ v1
+おくります _ 送ります _ send _ v1
+あげます _ 上げる _ give _ v2
+もらいます _ 貰います _ receive _ v1
+かします _ 貨します _ lend _ v1
+かります _ 借ります _ borrow _ v2
+おしえます _ 教えます _ teach _ v2
+ならいます _ 習います _ learn_ v1
+かけます[でんわを ~] _ 架けます _ make [a telephone call] _ v2
 て _ 手 _ hand, arm
 はし _ 箸 _ chopsticks
 スプーン _ _ spoon

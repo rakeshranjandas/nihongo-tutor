@@ -1,22 +1,22 @@
 export const data = 
 
-`のります[でんしゃに~]_乗ります _ride, get on [a train]
-おります[でんしゃを~]_降ります _get off [a train]
-のりかえます_乗り換えます_ change (trains, etc.)
-あびます[シャワーを~]_浴びます _take [a shower]
-いれます_入れます_ put in, insert
-だします_出します_ take out, withdraw
-はいります[だいがくに~]_入ります_ enter [university]
-でます[だいがくを~]_出ます_ graduate from [university]
-やめます[かいしゃを~]_辞めます_ quit or retire from [a company], stop, give up
-おします_押します_ press, push
-わかい_若い_ young
-ながい_長い_ long
-みじかい_短い_ short
-あかるい_明るい_ bright, light
-くらい_暗い_ dark (depressed)
-せがたかい_背が高い_ tall (referring to a person)
-あたまがいい_頭がいい_ clever, smart
+`のります[でんしゃに~]_乗ります _ride, get on [a train] _ v1
+おります[でんしゃを~]_降ります _get off [a train] _ v2
+のりかえます_乗り換えます_ change (trains, etc.) _ v2
+あびます[シャワーを~]_浴びます _take [a shower] _ v2
+いれます_入れます_ put in, insert _ v2
+だします_出します_ take out, withdraw _ v1
+はいります[だいがくに~]_入ります_ enter [university] _ v1
+でます[だいがくを~]_出ます_ graduate from [university] _ v2
+やめます[かいしゃを~]_辞めます_ quit or retire from [a company], stop, give up _ v2
+おします_押します_ press, push _ v1
+わかい_若い_ young _ i
+ながい_長い_ long _ i
+みじかい_短い_ short _ i
+あかるい_明るい_ bright, light _ i
+くらい_暗い_ dark (depressed) _ i
+せがたかい_背が高い_ tall (referring to a person) _ i
+あたまがいい_頭がいい_ clever, smart _ i
 からだ_体_ body
 あたま_頭_ head
 かみ_髪_ hair

@@ -1,11 +1,11 @@
 export const data = 
 
-`わかります[が] _ 分かります _ understand
-あります[が] _ 在ります _ have
-すき[な] _ 好き[な] _ like
-きらい[な] _ 嫌い[な] _ dislike
-じょうず[な] _ 上手[な] _ good at
-へた[な] _ 下手[な] _ poor at
+`わかります[が] _ 分かります _ understand _ v1
+あります[が] _ 在ります _ have _ v1
+すき[な] _ 好き[な] _ like _ na
+きらい[な] _ 嫌い[な] _ dislike _ na
+じょうず[な] _ 上手[な] _ good at _ na
+へた[な] _ 下手[な] _ poor at _ na
 りょうり _ 料理 _ dish (cooked food), cooking
 のみもの _ 飲み物 _ drinks
 スポーツ _ _ sport (~をします:play sports)

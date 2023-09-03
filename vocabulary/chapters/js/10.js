@@ -1,8 +1,8 @@
 export const data = 
 
-`います[が] _ _ exist, be (referring to animate things)
-あります[が] _  _ exist, be (referring to inanimate things)
-いろいろ[な] _ 色々[な] _ various
+`います[が] _ _ exist, be (referring to animate things) _ v2
+あります[が] _  _ exist, be (referring to inanimate things) _ v1
+いろいろ[な] _ 色々[な] _ various _ na
 おとこのひと _ 男の人 _ man
 おんなのひと _ 女の人 _ woman
 おとこのこ _ 男の子 _ boy

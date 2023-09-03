@@ -1,23 +1,23 @@
 export const data = 
 
-`つけます _ _ turn on
-けします _ 消します _ turn off
-あけます _ 開けます _ open
-しめます _ 閉めます _ close, shut
-いそぎます _ 急ぎます _ hurry
-まちます _ 待ちます _ wait
-とめます _ 止めます _ stop, park
-まがります[みぎへ~] _ 曲がります _ turn [to the right]
-もちます _ 持ちます _ hold
-とります _ 取ります _ take, pass
-てつだいます _ 手伝います _ help (with a task)
-よびます _ 呼びます _ call
-はなします _ 話します _ speak, talk
-みせます _ 見せます _ show
-おしえます[じゅうしょを~] _ 教えます _ tell [an address]
-はじめます _ 始めます _ start, begin
-ふります[あめが~] _ 降ります _ rain
-コピーします _ _ copy
+`つけます _ _ turn on _ v2
+けします _ 消します _ turn off _ v1
+あけます _ 開けます _ open _ v2
+しめます _ 閉めます _ close, shut _ v2
+いそぎます _ 急ぎます _ hurry _ v1
+まちます _ 待ちます _ wait _ v1
+とめます _ 止めます _ stop, park _ v2
+まがります[みぎへ~] _ 曲がります _ turn [to the right] _ v1
+もちます _ 持ちます _ hold _ v1
+とります _ 取ります _ take, pass _ v1
+てつだいます _ 手伝います _ help (with a task) _ v1
+よびます _ 呼びます _ call _ v1
+はなします _ 話します _ speak, talk _ v1
+みせます _ 見せます _ show _ v2
+おしえます[じゅうしょを~] _ 教えます _ tell [an address] _ v2
+はじめます _ 始めます _ start, begin _ v2
+ふります[あめが~] _ 降ります _ rain _ v1
+コピーします _ _ copy _ v2
 エアコン _ _ air conditioner
 パスポート _ _ passport
 なまえ _ 名前 _ name

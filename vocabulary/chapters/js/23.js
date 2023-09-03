@@ -1,16 +1,16 @@
 export const data = 
 
-`ききます[せんせいに~]_聞きます_ask [the teacher]
-まわします_回します_ turn
-ひきます_引きます_ pull
-かえます_変えます_ change
-さわります[ドアに~]_触ります_touch [a door]
-でます[おつりが~]_出ます_[change] come out
-うごきます[とけいが~]_動きます_[a watch] move, work
-あるきます[みちを~]_歩きます_walk [along a road]
-わたります[はしを~]_渡ります_cross [a bridge]
-きをつけます[くるまに~]_気をつけます_pay attention [to cars], take care
-ひっこしします_引っ越しします_ move (house)
+`ききます[せんせいに~]_聞きます_ask [the teacher] _ v1
+まわします_回します_ turn _ v1
+ひきます_引きます_ pull _ v1
+かえます_変えます_ change _ v2
+さわります[ドアに~]_触ります_touch [a door] _ v1
+でます[おつりが~]_出ます_[change] come out _ v2
+うごきます[とけいが~]_動きます_[a watch] move, work _ v1
+あるきます[みちを~]_歩きます_walk [along a road] _ v1
+わたります[はしを~]_渡ります_cross [a bridge] _ v1
+きをつけます[くるまに~]_気をつけます_pay attention [to cars], take care _ v2
+ひっこしします_引っ越しします_ move (house) _ v3
 でんきや_電気屋_ electrician
 ~や_~屋_ person of ~ shop
 サイズ_ _size

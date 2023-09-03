@@ -1,14 +1,14 @@
 export const data = 
 
-`たちます_立ちます_ stand up
-すわります_座ります_ sit down
-つかいます_使います_ use
-おきます_置きます_ put
-つくります_作ります、造ります_ make, produce
-うります_売ります_ sell
-しります_知ります_ get to know
-すみます_住ます_ be going to live
-けんきゅうします_研究します_ do research
+`たちます_立ちます_ stand up _ v1
+すわります_座ります_ sit down _ v1
+つかいます_使います_ use _ v1
+おきます_置きます_ put _ v1
+つくります_作ります、造ります_ make, produce _ v1
+うります_売ります_ sell _ v1
+しります_知ります_ get to know _ v1
+すみます_住ます_ be going to live _ v1
+けんきゅうします_研究します_ do research _ v3
 しっています_知っています_ know
 すんでいます[おおさかに~]_ _live [in Osaka]
 しりょう_資料_ materials, data

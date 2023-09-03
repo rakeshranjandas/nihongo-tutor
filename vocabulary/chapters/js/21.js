@@ -1,16 +1,16 @@
 export const data = 
 
-`おもいます_思います_ think
-いいます_言います_ say
-たります_足ります_ be enough, be sufficient
-かちます_勝ちます_ win
-まけます_負けます_ lose, be beaten
-あります[おまつりが~]_ _[a festival] be held, take place
-やくにたちます_役に立ちます_ be useful
-むだ[な]_無駄 _wasteful
-ふべん[な]_不便[な]_ inconvenient
+`おもいます_思います_ think _ v1
+いいます_言います_ say _ v1
+たります_足ります_ be enough, be sufficient _ v2
+かちます_勝ちます_ win _ v1
+まけます_負けます_ lose, be beaten _ v3
+あります[おまつりが~]_ _[a festival] be held, take place _ v1
+やくにたちます_役に立ちます_ be useful _ v1
+むだ[な]_無駄 _wasteful _ na
+ふべん[な]_不便[な]_ inconvenient _ na
 おなじ_同じ_ the same
-すごい_凄い_ awful, great (expresses astonishment or admiration)
+すごい_凄い_ awful, great (expresses astonishment or admiration) _ i
 しゅしょう_首相_ prime minister
 だいとうりょう_大統領_ president
 せいじ_政治_ politics

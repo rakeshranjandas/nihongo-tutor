@@ -1,8 +1,8 @@
 export const data = 
 
-`いきます _ 行ます _ go
-きます _ 来ます _ come
-かえります _ 帰ります _ go home, return
+`いきます _ 行ます _ go _ v1
+きます _ 来ます _ come _ v3
+かえります _ 帰ります _ go home, return _ v1
 がっこう _ 学校 _ school
 スーパー _ _ supermarket
 えき _ 駅 _ station

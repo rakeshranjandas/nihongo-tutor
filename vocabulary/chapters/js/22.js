@@ -1,10 +1,10 @@
 export const data = 
 
-`きます[シャツを~]_着ます_put on [a shirt, etc]
-はきます[くつを~]_履きます _put on [shoes, trousers, etc]
-かぶります[ぼうしを~]_被ります _put on [a hat, etc]
-かけます[めがねを~]_掛けます _put on [glasses]
-うまれます_生まれます_ be born
+`きます[シャツを~]_着ます_put on [a shirt, etc] _ v2
+はきます[くつを~]_履きます _put on [shoes, trousers, etc] _ v1
+かぶります[ぼうしを~]_被ります _put on [a hat, etc] _ v1
+かけます[めがねを~]_掛けます _put on [glasses] _ v2
+うまれます_生まれます_ be born _ v2
 コート_ _ coat
 スーツ_ _suit
 セーター_ _ sweater

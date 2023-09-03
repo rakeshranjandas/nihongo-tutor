@@ -1,11 +1,11 @@
 export const data = 
 
-`おきます _ 起きます _ get up, wake up
-ねます _ 寝ます _ sleep, go to bed
-はたらきます _ 働きます _ work
-やすみます _ 休みます _ take a rest, take a holiday
-べんきょうします _ 勉強します _ study
-おわります _ 終わります _ finish
+`おきます _ 起きます _ get up, wake up _ v2
+ねます _ 寝ます _ sleep, go to bed _ v2
+はたらきます _ 働きます _ work _ v1
+やすみます _ 休みます _ take a rest, take a holiday _ v1
+べんきょうします _ 勉強します _ study _ v3
+おわります _ 終わります _ finish _ v1
 デパート _ _ department store
 ぎんこう _ 銀行 _ bank
 ゆうびんきょく _ 郵便局 _ post office

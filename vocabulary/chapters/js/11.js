@@ -1,9 +1,9 @@
 export const data = 
 
-`います[こどもが~] _ _ have [a child]
-います[にほんに~] _ _ stay, be [in Japan]
-かかります _ 掛ります _ take (referring to time or money)
-やすみます[かいしゃを~] _ 休みます[会社を~] _ take a day off [work]
+`います[こどもが~] _ _ have [a child] _ v2
+います[にほんに~] _ _ stay, be [in Japan] _ v2
+かかります _ 掛ります _ take (referring to time or money) _ v1
+やすみます[かいしゃを~] _ 休みます[会社を~] _ take a day off [work] _ v1
 ひとつ _ 一つ _ one (used when counting things)
 ふたつ _ 二つ _ two (used when counting things)
 みっつ _ 三つ _ three (used when counting things)

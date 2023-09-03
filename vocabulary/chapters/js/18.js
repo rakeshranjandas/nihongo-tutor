@@ -1,15 +1,15 @@
 export const data = 
 
-`できます_出来ます_ be able to, can
-あらいます_洗います_ wash
-ひきます_弾きます_ play (stringed instrument or piano, etc.)
-うたいます_歌います_ sing
-あつめます_集めます_ collect, gather
-すてます_捨てます_ throw away
-かえます_換えます_ exchange, change
-うんてんします_運転します_ drive
-よやくします_予約します_ reserve, book
-けんがくします_見学します_ visit some place for study
+`できます_出来ます_ be able to, can _ v2
+あらいます_洗います_ wash _ v1
+ひきます_弾きます_ play (stringed instrument or piano, etc.) _ v1
+うたいます_歌います_ sing _ v1
+あつめます_集めます_ collect, gather _ v2
+すてます_捨てます_ throw away _ v2
+かえます_換えます_ exchange, change _ v2
+うんてんします_運転します_ drive _ v3
+よやくします_予約します_ reserve, book _ v3
+けんがくします_見学します_ visit some place for study _ v3
 ピアノ__ piano
 ~メートル__ ~ meter
 こくさい~_ 国際~_ international ~

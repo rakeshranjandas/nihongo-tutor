@@ -1,19 +1,19 @@
 export const data = 
 
-`かんたん[な] _ 簡単[な] _ easy, simple
-ちかい _ 近い _ near
-とおい _ 遠い _ far
-はやい _ 速い、早い _ fast, early
-おそい _ 遅い _ slow, late
-おおい[ひとが~] _ 多い[人が~] _ many [people], much
-すくない[ひとが~] _ 少ない[人が~] _ few [people], a little
-あたたかい _ 暖かい、温かい _ warm
-すずしい _ 涼しい _ cool
-あまい _ 甘い _ sweet
-からい _ 辛い _ hot (taste), spicy
-おもい _ 重い _ heavy
-かるい _ 軽い _ light
-いい[コーヒーが~] _ _ prefer[coffee]
+`かんたん[な] _ 簡単[な] _ easy, simple _ na
+ちかい _ 近い _ near _ i
+とおい _ 遠い _ far _ i
+はやい _ 速い、早い _ fast, early _ i
+おそい _ 遅い _ slow, late _ i
+おおい[ひとが~] _ 多い[人が~] _ many [people], much _ i
+すくない[ひとが~] _ 少ない[人が~] _ few [people], a little _ i
+あたたかい _ 暖かい、温かい _ warm _ i
+すずしい _ 涼しい _ cool _ i
+あまい _ 甘い _ sweet _ i
+からい _ 辛い _ hot (taste), spicy _ i
+おもい _ 重い _ heavy _ i
+かるい _ 軽い _ light _ i
+いい[コーヒーが~] _ _ prefer[coffee] _ i
 きせつ _ 季節 _ season
 はる _ 春 _ spring
 なつ _ 夏 _ summer

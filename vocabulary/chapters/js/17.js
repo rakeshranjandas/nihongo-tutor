@@ -1,23 +1,23 @@
 export const data = 
 
-`おぼえます_覚えます_ memorize
-わすれます_忘れます_ forget
-なくします_亡くします(無くします)_ lose
-だします[レポートを~]_出します_hand in [a report]
-はらいます_払います_ pay
-かえします_返します_ give back, return
-でかけます_出かけます_ go out
-ぬぎます_脱ぎます_ take off (clothes, shoes, etc.)
-もっていきます_持って行きます_ take (something) (lit. grab and go)
-もってきます_持って木ます_ bring (something) (lit. grab and come)
-しんぱいします_心配します_ worry
-ざんぎょうします_残業します_ work overtime
-しゅっちょうします_出張します_ go on a business trip
-のみます[くすりを~]_飲みます_take [medicine]
-はいります[おふろに~]_入ります_take [a bath]
-たいせつ[な]_大切[な]_important, precious
-だいじょうぶ[な]_大丈夫[な]_all right
-あぶない_危ない_ dangerous
+`おぼえます_覚えます_ memorize _ v2
+わすれます_忘れます_ forget _ v2
+なくします_亡くします(無くします)_ lose _ v1
+だします[レポートを~]_出します_hand in [a report] _ v1
+はらいます_払います_ pay _ v1
+かえします_返します_ give back, return _ v1
+でかけます_出かけます_ go out _ v2
+ぬぎます_脱ぎます_ take off (clothes, shoes, etc.) _ v1
+もっていきます_持って行きます_ take (something) (lit. grab and go) _ v1
+もってきます_持って木ます_ bring (something) (lit. grab and come) _ v3
+しんぱいします_心配します_ worry _ v3
+ざんぎょうします_残業します_ work overtime _ v3
+しゅっちょうします_出張します_ go on a business trip _ v3
+のみます[くすりを~]_飲みます_take [medicine] _ v1
+はいります[おふろに~]_入ります_take [a bath] _ v1
+たいせつ[な]_大切[な]_important, precious _ na
+だいじょうぶ[な]_大丈夫[な]_all right _ na
+あぶない_危ない_ dangerous _ i
 もんだい_問題_ question, problem, trouble
 こたえ_答え_ answer
 きんえん_禁煙_ no smoking
