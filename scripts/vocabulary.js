@@ -9,9 +9,15 @@ const App = {
 		FilterCriteria.set(this.getFilterCriteria());
 		Container.applyFilter();
 
+		if (Container.getFiltered().length === 0) {
+			alert('0 words');
+			return;
+		}
+
 		$('#filter_results_size').text(Container.getFiltered().length + " words");
 
 		this.ask();
+		this.hideFilter();
 	},
 
 	getFilterCriteria: function() {
@@ -54,11 +60,6 @@ const App = {
 	ask: function() {
 
 		let word = Container.getRandom();
-
-		if (word === false) {
-			alert('0 words');
-			return;
-		}
 
 		CardView.setWord(word);
 		CardView.showQuestion();
