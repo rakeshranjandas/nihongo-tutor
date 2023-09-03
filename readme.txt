@@ -3,7 +3,7 @@
 HOW TO ADD NEW VOCABULARY CHAPTER
 ----------------------------------
 
-1) Add the list in "vocabulary/chapters/js/{chapter_number}.js"
+1) Add the list in "vocabulary/chapters/js/{#new_chapter}.js"
 
 	- The format of the list is as follows:
 
@@ -14,12 +14,12 @@ HOW TO ADD NEW VOCABULARY CHAPTER
 		c) category values are - v1, v2, v3, i, na
 
 
-	- Export it as a const variable. Refer previous js files.
+	- Export it by "export const data". Refer previous js files.
 
 
 2) Import in "vocabulary/vocabulary_importer.js".
 
-	e.g. import { data as chapter_{chapter_number} } from "./chapters/js/{chapter_number}.js"
+	e.g. import { data as chapter_{#new_chapter} } from "./chapters/js/{#new_chapter}.js"
 
 
 3) Check if successful.
@@ -30,6 +30,6 @@ HOW TO ADD NEW VOCABULARY CHAPTER
 
 	Step c) Click "Apply".
 
-	Step d) Open developer console > "Console". 
+	Step d) Open Developer tools > "Console" tab. 
 
-		If any error, then recheck the added js file - "vocabulary/chapters/js/{chapter_numer}.js" if it follows abovementioned format.
+		If any error, then recheck the added js file - "vocabulary/chapters/js/{#new_chapter}.js" if it follows abovementioned format.
