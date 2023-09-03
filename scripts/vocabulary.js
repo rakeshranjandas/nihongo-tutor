@@ -187,14 +187,15 @@ const CardView = {
 	},
 
 	showQuestion: function() {
-		$('#view_meaning, #view_chapter, #view_category').html('');
+		$('#view_meaning, #view_chapter, #view_category, #view_kanji').html('');
 		$('#view_random').text(this._word[this._view.ask_by_field]);
 	},
 
 	showAnswer: function() {
-		$('#view_meaning').html("meaning: <b>" + this._word.meaning + "</b>");
-		$('#view_chapter').html("chapter: <b>" + this._word.chapter + "</b>");
-		$('#view_category').html("category: <b>" + (this._word.category ?? "" )+ "</b>");
+		$('#view_meaning').html("meaning: <span class=\"viewAnswer\">" + this._word.meaning + "</span>");
+		$('#view_kanji').html("kanji: <span class=\"viewAnswerKanji\">" + this._word.kanji + "</span>");
+		$('#view_chapter').html("chapter: <span class=\"viewAnswer\">" + this._word.chapter + "</span>");
+		$('#view_category').html("category: <span class=\"viewAnswer\">" + (this._word.category ?? "" )+ "</span>");
 	}
 }
 

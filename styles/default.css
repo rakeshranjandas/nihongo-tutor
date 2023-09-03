@@ -79,15 +79,23 @@
 }
 
 
-#view_meaning, #view_chapter, #view_category {
+#view_meaning, #view_chapter, #view_category, #view_kanji {
 	display: block;
 	min-height: 24px;
 	min-width: 20px;
 	color: gray;
 }
 
-#view_meaning > b, #view_chapter > b, #view_category > b {
-	color: red;
+.viewAnswer {
+	color: blue;
+	font-size: larger;
+}
+
+.viewAnswerKanji {
+	font-weight: lighter;
+	font-size: 2em;
+	color: brown;
+	min-height: 31px;
 }
 
 #hide_filter_button {
