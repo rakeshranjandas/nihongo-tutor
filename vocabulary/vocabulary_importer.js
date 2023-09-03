@@ -58,7 +58,7 @@ function extractAndPack(str, chapter) {
 			kanji: data[1].trim(),
 			meaning: data[2].trim(),
 			chapter: chapter,
-			category: '',
+			category: data[3] ? data[3].trim() : '',
 		});
 	}
 
