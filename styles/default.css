@@ -43,6 +43,47 @@
 	color: blue;
 }
 
+#view_meaning, #view_chapter, #view_category, #view_kanji {
+	display: block;
+	min-height: 24px;
+	min-width: 20px;
+	color: gray;
+}
+
+#view_kanji {
+	min-height: 31px;
+}
+
+.viewAnswer {
+	color: blue;
+	font-size: larger;
+}
+
+.viewAnswerKanji {
+	font-weight: lighter;
+	font-size: 2em;
+	color: brown;
+}
+
+#hide_filter_button {
+	background-color: red;
+}
+
+#filter_div input[type="text"] {
+	width: 50px;
+}
+
+#filter_div label {
+	display: inline;
+	margin-left: 10px;
+}
+
+#filter_results_size {
+	color: red;
+}
+
+
+
 @media only screen and (max-width: 1100px) {
   #view_random {
 	font-size: 8em;
@@ -57,6 +98,18 @@
   #view_sound {
   	font-size: 4em;
   }
+
+  #view_meaning, #view_chapter, #view_category, #view_kanji {
+		font-size: 2em;  
+	}
+
+	#filter_div {
+		font-size: 2em;
+	}
+
+	a {
+		font-size:  2em;
+	}
 
   button {
 	font-size: 4em !important;
@@ -76,41 +129,4 @@
     font-size: 2em;
     text-align: center;
   }
-}
-
-
-#view_meaning, #view_chapter, #view_category, #view_kanji {
-	display: block;
-	min-height: 24px;
-	min-width: 20px;
-	color: gray;
-}
-
-.viewAnswer {
-	color: blue;
-	font-size: larger;
-}
-
-.viewAnswerKanji {
-	font-weight: lighter;
-	font-size: 2em;
-	color: brown;
-	min-height: 31px;
-}
-
-#hide_filter_button {
-	background-color: red;
-}
-
-#filter_div input[type="text"] {
-	width: 50px;
-}
-
-#filter_div label {
-	display: inline;
-	margin-left: 10px;
-}
-
-#filter_results_size {
-	color: red;
 }
