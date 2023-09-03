@@ -100,15 +100,15 @@
   }
 
   #view_meaning, #view_chapter, #view_category, #view_kanji {
-		font-size: 2em;  
+		font-size: 3em;  
 	}
 
 	#filter_div {
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	a {
-		font-size:  2em;
+		font-size: 3em;
 	}
 
   button {
