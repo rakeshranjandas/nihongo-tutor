@@ -1,4 +1,4 @@
-
+	
 const App = {
 
 	init: function() {
@@ -66,6 +66,8 @@ const App = {
 
 		$('#get_random_button').hide();
 		$('#verify_meaning_button').show();
+
+		this.asked = true;
 	},
 
 	answer: function() {
@@ -73,6 +75,13 @@ const App = {
 
 		$('#get_random_button').show();
 		$('#verify_meaning_button').hide();
+
+		this.asked = false;
+	},
+
+	askOrAnswer: function() {
+		if (this.asked) this.answer();
+		else this.ask();
 	},
 
 	showFilter: function() {
@@ -200,10 +209,23 @@ const CardView = {
 	}
 }
 
+function bindAskOrAnswerOnSpace() {
 
+	$(document).on('keydown', function() {
+
+		if (event.code !== "Space") return;
+
+		event.preventDefault();
+
+		App.askOrAnswer();
+
+	})
+}
 
 $(document).ready(function() {
 	App.init();
 
 	App.ask();
+
+	bindAskOrAnswerOnSpace();
 })
