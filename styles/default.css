@@ -4,7 +4,7 @@
 
 #view_box {
 	margin-top: 2em;
-	padding: 7em;
+	padding: 5em;
 	border: 1px solid red;
 }
 
@@ -45,13 +45,13 @@
 
 #view_meaning, #view_chapter, #view_category, #view_kanji {
 	display: block;
-	min-height: 24px;
+	min-height: 28px;
 	min-width: 20px;
 	color: gray;
 }
 
 #view_kanji {
-	min-height: 31px;
+	min-height: 48px;
 }
 
 .viewAnswer {
