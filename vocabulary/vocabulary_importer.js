@@ -44,6 +44,11 @@ import { data as chapter_42 } from "./chapters/js/42.js"
 import { data as chapter_43 } from "./chapters/js/43.js"
 import { data as chapter_44 } from "./chapters/js/44.js"
 import { data as chapter_45 } from "./chapters/js/45.js"
+import { data as chapter_46 } from "./chapters/js/46.js"
+import { data as chapter_47 } from "./chapters/js/47.js"
+import { data as chapter_48 } from "./chapters/js/48.js"
+import { data as chapter_49 } from "./chapters/js/49.js"
+import { data as chapter_50 } from "./chapters/js/50.js"
 
 export const vocabulary_importer = {
 
