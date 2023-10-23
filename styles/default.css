@@ -82,6 +82,17 @@
 	color: red;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center !important;
+}
+
 
 
 @media only screen and (max-width: 1100px) {
