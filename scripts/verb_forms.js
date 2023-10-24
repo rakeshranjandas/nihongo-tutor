@@ -32,8 +32,9 @@ let VerbForms = {
 	getTableHeader: function() { 
 		return `<thead>
 				    <tr>
-				      <th>id</th>
-				      <th>form</th>
+				      <th>#</th>
+				      <th>Chapter</th>
+				      <th>Form</th>
 				      <th colspan="4">Group 1</th>
 				      <th>Group 2</th>
 				      <th colspan="2">Group 3</th>
@@ -41,13 +42,14 @@ let VerbForms = {
 				    <tr>
 				      <th></th>
 				      <th></th>
-				      <th>i/chi/ri</th>
-				      <th>mi/bi</th>
-				      <th>ki/gi</th>
+				      <th></th>
+				      <th>い / ち / り</th>
+				      <th>み / び</th>
+				      <th>き / ぎ</th>
 				      <th>-</th>
 				      <th></th>
-				     <th>kimasu</th>
-				     <th>shimasu</th>
+				     <th>きます</th>
+				     <th>します</th>
 				    </tr>
 				 </thead>`;
 
@@ -74,6 +76,7 @@ let VerbForms = {
 		let trow_html = '';
 
 		trow_html += this.getTableColId();
+		trow_html += this.getTableColChapter(formRule.chapter);
 		trow_html += this.getTableColForm(formRule.form);
 		trow_html += this.getTableColGroup1(formRule.group1);
 		trow_html += this.getTableColGroup2(formRule.group2);
@@ -87,11 +90,20 @@ let VerbForms = {
 		return this._wrap('td', this._getId());
 	},
 
+	getTableColChapter: function(chapter) {
+		return this._wrap('td', chapter);
+	},
+
 	getTableColForm: function(formLabel) {
 		return this._wrap('td', formLabel);
 	},
 
 	getTableColGroup1: function(groupRule) {
+
+		if (groupRule.rule) {
+			return this._wrap('td', this._getSubGroupTd(groupRule), { 'colspan': 4 });
+		}
+
 		return this._wrap('td', this._getSubGroupTd(groupRule['i/chi/ri']))
 			+ 	this._wrap('td', this._getSubGroupTd(groupRule['mi/bi']))
 			+	this._wrap('td', this._getSubGroupTd(groupRule['ki/gi']))
@@ -110,14 +122,12 @@ let VerbForms = {
 
 	_getSubGroupTd: function(groupRule) {
 
-		console.log(groupRule);
-
 		let rule = groupRule.rule;
 
 		let examplesLi = '';
 
 		groupRule.examples.forEach((example) => {
-			examplesLi += this._wrap('li', example);
+			examplesLi += this._wrap('li', this._getSubGroupExample(example));
 		});
 
 		return this._wrap('details', 
@@ -125,6 +135,12 @@ let VerbForms = {
 				this._wrap('summary', rule)
 			+ 	this._wrap('ul', examplesLi)
 		);
+	},
+
+	_getSubGroupExample: function(example) {
+		if (typeof example === 'string') return example;
+
+		return JSON.stringify(example);
 	}
 
 };
