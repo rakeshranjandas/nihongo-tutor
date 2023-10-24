@@ -12,8 +12,11 @@ let VerbForms = {
 		$('#main_div').html(this.getTable());
 	},
 
-	_wrap: function(htmlTag, content) {
-		return '<' + htmlTag + '>' + content + '</' + htmlTag + '>';
+	_wrap: function(htmlTag, content, attr) {
+
+		let attrStr = attr ? Object.entries(attr).map(([key, value]) => `${key}='${value}'`).join(' '): '';
+
+		return '<' + htmlTag + ' ' + attrStr + '>' + content + '</' + htmlTag + '>';
 	},
 
 	getTable: function() {
