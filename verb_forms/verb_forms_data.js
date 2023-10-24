@@ -2,147 +2,142 @@
 export const data = 
 [
 
+
+
+	// te
+
 	{
-		'form': 'te',
+		'form': 'て',
+
+		'chapter': '14',
 		
 		'group1': {
 			
 			'i/chi/ri': {
 
-				'rule': 'x+y = 2',
+				'rule': 'って',
 				
 				'examples': [
-					'ikimasu -> itte'
+					'とります -> とって',
+					'まちます -> まって',
 				]
 
 			},
 
 			'mi/bi': {
-				'rule': 'x+y = 2',
+				'rule': 'んで',
 				
 				'examples': [
-					'ikimasu -> itte'
+					'あそびます -> あそんで',
+					'よびます -> よんで',
 				]
 			},
 
 			'ki/gi': {
 
-				'rule': 'x+y = 2',
+				'rule': 'いて　/　いで',
 				
 				'examples': [
-					'ikimasu -> itte'
+					'かきます -> かいて',
+					'いそぎます -> いそいで',
 				]
 
 			},
 
 			'-': {
-				'rule': 'x+y = 2',
+				'rule': 'て',
 				
 				'examples': [
-					'ikimasu -> itte'
+					'はなします -> はなして'
 				]
 			}
 		},
 
 		'group2': {
-			'rule': 'xxy',
+			'rule': 'て',
 
 			'examples': [
-				'ikimasu -> itte'
+				'たべます -> たべて',
+				'おしえます -> おしえて',
+				'おきます -> おきて',
+				'かります -> かりて',
 			]
 		},
 
 		'group3': {
 
 			'kimasu': {
-				'rule': 'xxy',
+				'rule': 'きて',
 
 				'examples': [
-					'ikimasu -> itte'
+					'もってきます -> もってきて',
 				]
 			},
 
 			'shimasu': {
-				'rule': 'xxy',
+				'rule': 'して',
 
 				'examples': [
-					'ikimasu -> itte'
+					'べんきょうします -> べんきょうして'
 				]
 			}
 		}
 	},
 
 
+
+
+
+	// nai
+
 	{
-		'form': 'te',
+		'form': 'ない',
+
+		'chapter': '17',
 		
 		'group1': {
-			
-			'i/chi/ri': {
 
-				'rule': 'x+y = 2',
-				
-				'examples': [
-					'ikimasu -> itte'
-				]
+			'rule': 'あ sound + ない',
 
-			},
+			'examples': [
+				'いきます -> いかない',
+				'のみます -> のまない',
+				'あいます -> あわない',
+			],
 
-			'mi/bi': {
-				'rule': 'x+y = 2',
-				
-				'examples': [
-					'ikimasu -> itte'
-				]
-			},
-
-			
-			'ki/gi': {
-
-				'rule': 'x+y = 2',
-				
-				'examples': [
-					'ikimasu -> itte'
-				]
-
-			},
-
-			'-': {
-				'rule': 'x+y = 2',
-				
-				'examples': [
-					'ikimasu -> itte'
-				]
-			}
 		},
 
 		'group2': {
-			'rule': 'xxy',
+			'rule': 'ない',
 
 			'examples': [
-				'ikimasu -> itte'
+				'たべます -> たべない',
+				'とめます -> とめない',
+				'みます -> みない',
+				'かります -> かりない',
 			]
 		},
 
 		'group3': {
 
 			'kimasu': {
-				'rule': 'xxy',
+				'rule': 'こない',
 
 				'examples': [
-					'ikimasu -> itte'
+					'もってきます -> もってこない',
 				]
 			},
 
 			'shimasu': {
-				'rule': 'xxy',
+				'rule': 'しない',
 
 				'examples': [
-					'ikimasu -> itte'
+					'べんきょうします -> ばんきょうしない'
 				]
 			}
 		}
-	}
+	},
+
 
 
 ];
