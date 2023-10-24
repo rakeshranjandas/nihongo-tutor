@@ -93,6 +93,11 @@ th, td {
   text-align: center !important;
 }
 
+details summary { list-style-type: none; cursor: pointer; } /* Firefox */
+details summary::-webkit-details-marker { display: none; cursor: pointer; } /* Chrome */
+details summary::marker { display: none; }
+
+details > ul { background: #fffdcb; }
 
 
 @media only screen and (max-width: 1100px) {
