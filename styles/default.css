@@ -65,7 +65,7 @@
 	color: brown;
 }
 
-#hide_filter_button {
+#hide_filter_button, #hide_chart_button {
 	background-color: red;
 }
 
@@ -80,6 +80,22 @@
 
 #filter_results_size {
 	color: red;
+}
+
+#chart {
+	background-color: #ffffe1;
+}
+
+#chart > header {
+	text-align: center;
+}
+
+#chart > p {
+	cursor: pointer;
+}
+
+.chartItemSeen {
+	background-color: #d6fdd6;
 }
 
 table {

@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body style="display:flex">
 
 	<div class="container" id="main_div">
 		
@@ -20,6 +20,9 @@
 		<p>
 			<button onclick="App.showFilter()" id="show_filter_button">Show Filter</button>
 			<button onclick="App.hideFilter()" id="hide_filter_button" style="display:none">Hide Filter</button>
+			
+			<button onclick="App.showChart()" id="show_chart_button">Show Chart</button>
+			<button onclick="App.hideChart()" id="hide_chart_button" style="display:none">Hide Chart</button>
 		</p>
 
 		<div id="filter_div" style="display:none">
@@ -65,6 +68,8 @@
 
 		<!-- <div id="kana_chart" style="display:none"></div> -->
 	</div>
+
+	<div style="display:none" id="chart"> Hello </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 

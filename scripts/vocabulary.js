@@ -9,9 +9,11 @@ const App = {
 		FilterCriteria.set(this.getFilterCriteria());
 		Container.applyFilter();
 
-		$('#filter_results_size').text(Container.getFiltered().length + " words");
+		let countFiltered = Container.getFiltered().length;
+
+		$('#filter_results_size').text(countFiltered + " words");
 		
-		if (Container.getFiltered().length === 0) {
+		if (countFiltered === 0) {
 			alert('0 words');
 			return;
 		}
@@ -120,6 +122,20 @@ const App = {
 		if ($('.filterCategoryCheckbox:checked').length === $('.filterCategoryCheckbox').length) {
 			$('.filterCategoryAllCheckbox').prop('checked', true);
 		}
+	},
+
+	showChart: function() {
+		$('#show_chart_button').hide();
+		$('#hide_chart_button').show();
+
+		Chart.show();
+	},
+
+	hideChart: function() {
+		$('#show_chart_button').show();
+		$('#hide_chart_button').hide();
+
+		Chart.hide();
 	}
 
 };
@@ -129,10 +145,14 @@ const Container = {
 	
 	_container_all: [],
 	_container_filtered: [],
+	_position_randomizer: null,
 
 	init: function() {
 		this._container_all = structuredClone(all_vocabulary);
 		this._container_filtered = structuredClone(all_vocabulary);
+
+		this._initPositionRandomizer();
+		this._initChart();
 	},
 
 	getAll: function() {
@@ -151,6 +171,18 @@ const Container = {
 				this._container_filtered.push(this._container_all[i]);
 			}
 		}
+
+		this._initPositionRandomizer();
+		this._initChart();
+	},
+
+	_initPositionRandomizer: function() {
+		// this._position_randomizer = new BasicRandomizer(this._container_filtered);
+		this._position_randomizer = new WeightedRandomizer(this._container_filtered);
+	},
+
+	_initChart: function() {
+		Chart.init(this._container_filtered);
 	},
 
 	getRandom: function() {
@@ -158,8 +190,16 @@ const Container = {
 		if (this._container_filtered.length === 0)
 			return false;
 
-		let random_index = Math.floor(Math.random() * this._container_filtered.length);
-		return this._container_filtered[random_index];
+		let random_item = this._position_randomizer.randomize();
+		random_item.seen = true;
+
+		Chart.update();
+
+		return random_item;
+	}
+
+};
+
 
 class BasicRandomizer {
 	constructor(items) {
@@ -206,6 +246,45 @@ class WeightedRandomizer {
 	  }
 };
 
+
+const Chart = {
+	_chart_div_id_selector: '#chart',
+	_items: [],
+
+	init: function(items) {
+		this._items = items;
+		this._render();
+	},
+
+	show: function() {
+		$(this._chart_div_id_selector).show();
+	},
+
+	hide: function() {
+		$(this._chart_div_id_selector).hide();
+	},
+
+	update: function() {
+		this._render();
+	},
+
+	_render: function() {
+
+		let html = '';
+
+		let total = this._items.length;
+		let seen = this._items.filter((item) => item.seen === true ).length;
+
+		html += '<header> Total: ' + total + '</header>'; 
+		html += '<header> Seen: ' + seen + '</header>'; 
+
+		this._items.forEach(function(item) {
+			html += '<p class="'+ (item.seen?"chartItemSeen":"") +'" title="'+ item.meaning +'">' + item.romaji + '<p>';
+		});
+
+		$(this._chart_div_id_selector).html(html);
+
+	}
 };
 
 
@@ -224,7 +303,7 @@ const FilterCriteria = {
 		return this._criteria.chapter.includes(item.chapter.toString().toLowerCase()) 
 			&& this._criteria.category.includes(item.category.toLowerCase()); 
 	}
-}
+};
 
 
 const CardView = {
@@ -251,7 +330,8 @@ const CardView = {
 		$('#view_chapter').html("chapter: <span class=\"viewAnswer\">" + this._word.chapter + "</span>");
 		$('#view_category').html("category: <span class=\"viewAnswer\">" + (this._word.category ?? "" )+ "</span>");
 	}
-}
+};
+
 
 function bindAskOrAnswerOnSpace() {
 
@@ -265,6 +345,7 @@ function bindAskOrAnswerOnSpace() {
 
 	})
 }
+
 
 $(document).ready(function() {
 	App.init();
