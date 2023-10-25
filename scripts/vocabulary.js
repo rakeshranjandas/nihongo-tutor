@@ -160,7 +160,51 @@ const Container = {
 
 		let random_index = Math.floor(Math.random() * this._container_filtered.length);
 		return this._container_filtered[random_index];
+
+class BasicRandomizer {
+	constructor(items) {
+		this.items = items;
 	}
+
+	randomize() {
+		let random_index = Math.floor(Math.random() * this.items.length);
+		return this.items[random_index];
+	}
+};
+
+
+class WeightedRandomizer {
+  	constructor(items) {
+	    this.items = items;
+	    this.probabilities = new Array(items.length).fill(1);
+  	}
+
+  	randomize() {
+	    const totalProbability = this.probabilities.reduce((a, b) => a + b, 0);
+	    const weightedProbabilities = this.probabilities.map(p => p / totalProbability);
+	    
+	    const randomValue = Math.random();
+	    let cumulativeProbability = 0;
+	    
+	    for (let i = 0; i < weightedProbabilities.length; i++) {
+		      cumulativeProbability += weightedProbabilities[i];
+		      if (randomValue < cumulativeProbability) {
+		        this.decreaseProbability(i);
+		        return this.items[i];
+		      }
+	    }
+	    
+	    // Fallback to the last item in case of rounding errors
+	    const lastIndex = this.items.length - 1;
+	    this.decreaseProbability(lastIndex);
+	    return this.items[lastIndex];
+	  }
+
+	  decreaseProbability(index) {
+		// Decrease the probability of the chosen index
+		this.probabilities[index] *= 0.2; // You can adjust this factor as needed
+	  }
+};
 
 };
 
