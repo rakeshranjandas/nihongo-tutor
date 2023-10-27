@@ -214,6 +214,9 @@ class BasicRandomizer {
 
 
 class WeightedRandomizer {
+
+	DECAY_RATE = 0.8;
+
   	constructor(items) {
 	    this.items = items;
 	    this.probabilities = new Array(items.length).fill(1);
@@ -242,7 +245,7 @@ class WeightedRandomizer {
 
 	  decreaseProbability(index) {
 		// Decrease the probability of the chosen index
-		this.probabilities[index] *= 0.2; // You can adjust this factor as needed
+		this.probabilities[index] *= this.DECAY_RATE; // You can adjust this factor as needed
 	  }
 };
 
