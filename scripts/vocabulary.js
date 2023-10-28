@@ -3,6 +3,7 @@ const App = {
 
 	init: function() {
 		Container.init();
+		this._renderToggleLangButton();
 	},
 
 	filter: function() {
@@ -136,9 +137,60 @@ const App = {
 		$('#hide_chart_button').hide();
 
 		Chart.hide();
+	},
+
+	_renderToggleLangButton: function() {
+		$('#toggle_lang_button').text(AppView.get().desc);
+	},
+
+	toggleView: function() {
+		AppView.toggle();
+
+		this.ask();
+
+		Chart.update();
+
+		this._renderToggleLangButton();
 	}
 
 };
+
+const AppView = {
+
+	_view_list: [
+
+		// English to Japanese
+		{
+			'desc': 'Eng -> Jap',
+			'ask_by_field': 'meaning',
+			'show_field_1': { 
+				'label': 'japanese',
+				'key': 'romaji'
+			}
+		},
+
+		// Japanese to English
+		{
+			'desc': 'Jap -> Eng',
+			'ask_by_field': 'romaji',
+			'show_field_1': {
+				'label': 'english',
+				'key': 'meaning'
+			}
+		}
+
+	],
+
+	_view_index: 0,
+
+	toggle: function() {
+		this._view_index = (this._view_index + 1) % 2;
+	},
+
+	get: function() {
+		return this._view_list[this._view_index];
+	}
+}
 
 
 const Container = {
@@ -282,7 +334,9 @@ const Chart = {
 		html += '<header> Seen: ' + seen + '</header>'; 
 
 		this._items.forEach(function(item) {
-			html += '<p class="'+ (item.seen?"chartItemSeen":"") +'" title="'+ item.meaning +'">' + item.romaji + '<p>';
+			html += '<p class="'+ (item.seen?"chartItemSeen":"") 
+				+ '" title="' + item[AppView.get().show_field_1.key] +'">' 
+				+ item[AppView.get().ask_by_field] + '<p>';
 		});
 
 		$(this._chart_div_id_selector).html(html);
@@ -312,26 +366,32 @@ const FilterCriteria = {
 const CardView = {
 
 	_word: {},
-	_view: { 'ask_by_field': 'romaji' },
-
+	
 	setWord: function(word) {
 		this._word = word;
 	},
 
-	setView: function(view) {
-		this._view = view;
-	},
-
 	showQuestion: function() {
 		$('#view_meaning, #view_chapter, #view_category, #view_kanji').html('');
-		$('#view_random').text(this._word[this._view.ask_by_field]);
+		$('#view_random').text(this._word[AppView.get().ask_by_field]);
 	},
 
 	showAnswer: function() {
-		$('#view_meaning').html("meaning: <span class=\"viewAnswer\">" + this._word.meaning + "</span>");
+		
+		this._showFirstField();
+
 		$('#view_kanji').html("kanji: <span class=\"viewAnswerKanji\">" + this._word.kanji + "</span>");
 		$('#view_chapter').html("chapter: <span class=\"viewAnswer\">" + this._word.chapter + "</span>");
 		$('#view_category').html("category: <span class=\"viewAnswer\">" + (this._word.category ?? "" )+ "</span>");
+	},
+
+	_showFirstField: function() {
+		$('#view_meaning').html(
+			AppView.get().show_field_1.label
+			+ ": <span class=\"viewAnswer\">" 
+			+ this._word[AppView.get().show_field_1.key] 
+			+ "</span>"
+		);
 	}
 };
 
