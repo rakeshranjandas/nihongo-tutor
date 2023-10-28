@@ -181,7 +181,7 @@ const AppView = {
 
 	],
 
-	_view_index: 0,
+	_view_index: 1, 	// Default view is Jap -> Eng
 
 	toggle: function() {
 		this._view_index = (this._view_index + 1) % 2;
