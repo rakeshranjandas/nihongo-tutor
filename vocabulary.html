@@ -14,17 +14,22 @@
 
 <body style="display:flex">
 
+	<div style="display:none" id="saved"></div>
+
 	<div class="container" id="main_div">
 		
 
 		<p>
-			<button onclick="App.showFilter()" id="show_filter_button">Show Filter</button>
+			<button onclick="App.showFilter()" id="show_filter_button">Filter</button>
 			<button onclick="App.hideFilter()" id="hide_filter_button" style="display:none">Hide Filter</button>
 			
+			<button onclick="App.showSaved()" id="show_saved_button">Show Saved</button>
+			<button onclick="App.hideSaved()" id="hide_saved_button" style="display:none">Hide Saved</button>
+
 			<button onclick="App.showChart()" id="show_chart_button">Show Chart</button>
 			<button onclick="App.hideChart()" id="hide_chart_button" style="display:none">Hide Chart</button>
 
-			<button onclick="App.toggleView()" id="toggle_lang_button"></button>
+			<button onclick="App.toggleView()" id="toggle_lang_button" style="display:none"></button>
 		</p>
 
 		<div id="filter_div" style="display:none">
@@ -57,21 +62,14 @@
 		</p>
 
 		<p>
+			<button onclick="App.saveWord()" id="save_button"> Save </button>
 			<button class="button-primary" onclick="App.ask()" id="get_random_button"> Show Next </button>
-		</p>
-
-		<p>
 			<button onclick="App.answer()" style="display:none" id="verify_meaning_button"> Verify Meaning </button>
 		</p>
 
-		<!-- <p>
-			<button class="button-showchart" onclick="toggleChart()" id="show_kana"> Show Kana </button>
-		</p> -->
-
-		<!-- <div id="kana_chart" style="display:none"></div> -->
 	</div>
 
-	<div style="display:none" id="chart"> Hello </div>
+	<div style="display:none" id="chart"> </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 

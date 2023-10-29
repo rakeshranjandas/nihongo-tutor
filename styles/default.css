@@ -65,7 +65,7 @@
 	color: brown;
 }
 
-#hide_filter_button, #hide_chart_button {
+#hide_filter_button {
 	background-color: red;
 }
 
@@ -82,7 +82,7 @@
 	color: red;
 }
 
-#chart {
+#chart, #hide_chart_button {
 	background-color: #ffffe1;
 }
 
@@ -97,6 +97,25 @@
 .chartItemSeen {
 	background-color: #d6fdd6;
 }
+
+#saved, #hide_saved_button, #save_button {
+	background-color: #e5ffe8;;
+}
+
+#saved > header {
+	text-align: center;
+}
+
+#saved > p {
+	cursor: pointer;
+}
+
+.removeSavedSpan {
+	font-weight: bold;
+	color: red;
+	margin-right: 1em;
+}
+
 
 table {
   border-collapse: collapse;

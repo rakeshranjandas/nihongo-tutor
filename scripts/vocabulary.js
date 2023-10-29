@@ -1,9 +1,14 @@
 	
 const App = {
 
+	_asked_word: null,
+
 	init: function() {
 		Container.init();
+		
 		this._renderToggleLangButton();
+
+		SavedWords.init();
 	},
 
 	filter: function() {
@@ -64,11 +69,15 @@ const App = {
 
 		let word = Container.getRandom();
 
+		this._asked_word = word;
+
 		CardView.setWord(word);
 		CardView.showQuestion();
 
 		$('#get_random_button').hide();
 		$('#verify_meaning_button').show();
+		
+		$('#save_button').show();
 
 		this.asked = true;
 	},
@@ -140,7 +149,7 @@ const App = {
 	},
 
 	_renderToggleLangButton: function() {
-		$('#toggle_lang_button').text(AppView.get().desc);
+		$('#toggle_lang_button').text(AppView.get().desc).show();
 	},
 
 	toggleView: function() {
@@ -150,7 +159,29 @@ const App = {
 
 		Chart.update();
 
+		SavedWords.update();
+
 		this._renderToggleLangButton();
+	},
+
+	saveWord: function() {
+		SavedWords.save(this._asked_word);
+		
+		$('#save_button').hide();
+	},
+
+	showSaved: function() {
+		SavedWords.show();
+
+		$('#show_saved_button').hide();
+		$('#hide_saved_button').show();
+	},
+
+	hideSaved: function() {
+		SavedWords.hide();
+
+		$('#show_saved_button').show();
+		$('#hide_saved_button').hide();
 	}
 
 };
@@ -344,6 +375,66 @@ const Chart = {
 	}
 };
 
+const SavedWords = {
+
+	_saved: [],
+	_saved_div_selector: '#saved',
+
+	init: function() {
+		this._render();
+	},
+
+	_render: function() {
+
+		let html = '';
+
+		let total = this._saved.length;
+
+		html += '<header> Total: ' + total + '</header>'; 
+		html += '<header> &nbsp; </header>'; 
+
+		for (let i = 0; i < this._saved.length; i++) {
+
+			let item = this._saved[i];
+
+			html += '<p title="' + item[AppView.get().show_field_1.key] +'">'
+				+ '<span class="removeSavedSpan" onclick="SavedWords.delete(' + i + ')">x</span>'
+				+ item[AppView.get().ask_by_field] + '<p>';
+
+		}
+
+		$(this._saved_div_selector).html(html);
+
+	},
+
+	update: function() {
+		this._render();
+	},
+
+	save: function(wordObj) {
+		for (let i = 0; i < this._saved.length; i++) {
+			if (JSON.stringify(this._saved[i]) === JSON.stringify(wordObj))
+				return;
+		}
+
+		this._saved.push(wordObj);
+		this._render();
+	},
+
+	delete: function(index) {
+		this._saved.splice(index, 1);
+		this._render();
+	},
+
+	show: function() {
+		$(this._saved_div_selector).show();
+	},
+
+	hide: function() {
+		$(this._saved_div_selector).hide();
+	}
+
+}
 
 const FilterCriteria = {
 
