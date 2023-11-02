@@ -138,6 +138,38 @@ details summary::marker { display: none; }
 
 details > ul { background: #fffdcb; }
 
+ul.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+ul.navbar > li {
+  float: left;
+  margin-bottom: 0; 
+}
+
+ul.navbar > li a {
+  display: block;
+  padding-top: calc(0.3rem + 1vmin);
+  text-decoration: underline; 
+}
+
+ul.navbar > li a.active {
+	color: #db5582;
+  text-decoration: none; 
+}
+
+@media (min-width: 550px) {
+  ul.navbar > li a {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+}
+
+ul.navbar > li a > * {
+  margin: 0!important; }
+}
 
 @media only screen and (max-width: 1100px) {
   #view_random {
