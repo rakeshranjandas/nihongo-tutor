@@ -298,7 +298,7 @@ class BasicRandomizer {
 
 class WeightedRandomizer {
 
-	DECAY_RATE = 0.8;
+	DECAY_RATE = 0.01;
 
   	constructor(items) {
 	    this.items = items;
