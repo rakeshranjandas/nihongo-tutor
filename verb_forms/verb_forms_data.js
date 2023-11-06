@@ -399,7 +399,7 @@ export const data =
 			'examples': [
 				'いきます -> いけ',
 				'のみます -> のめ',
-				'はなせます -> はなせ',
+				'はなします -> はなせ',
 			]
 		},
 
@@ -489,7 +489,7 @@ export const data =
 	{
 		'form': 'conditional',
 
-		'chapter': '35',
+		'chapter': '34',
 		
 		'group1': {
 			'rule': 'え　sound　+ ば',
