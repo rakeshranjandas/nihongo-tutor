@@ -489,7 +489,7 @@ export const data =
 	{
 		'form': 'conditional',
 
-		'chapter': '34',
+		'chapter': '35',
 		
 		'group1': {
 			'rule': 'え　sound　+ ば',
