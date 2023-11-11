@@ -426,14 +426,14 @@ const CardView = {
 		
 		this._showFirstField();
 
-		$('#view_meaning_2').html("Hiragana: <span class=\"viewAnswerKanji\">" + this._word.hiragana + "</span>");
+		$('#view_meaning_2').html("Hiragana: <span class=\"viewAnswer\" >" + this._word.hiragana + "</span>");
 		$('#view_chapter').html("chapter: <span class=\"viewAnswer\">" + this._word.chapter + "</span>");
 	},
 
 	_showFirstField: function() {
 		$('#view_meaning_1').html(
 			AppView.get().show_field_1.label
-			+ ": <span class=\"viewAnswer\">" 
+			+ ": <span class=\"viewAnswerKanji\">" 
 			+ this._word[AppView.get().show_field_1.key] 
 			+ "</span>"
 		);
