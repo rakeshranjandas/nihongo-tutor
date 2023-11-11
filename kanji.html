@@ -16,8 +16,8 @@
 
 	<ul class="navbar">
 	  <li><a href="index.html">Kana</a></li>
-	  <li><a href="javascript:void(0);" class="active">Vocalbulary</a></li>
-	  <li><a href="kanji.html">Kanji</a></li>
+	  <li><a href="vocabulary.html">Vocalbulary</a></li>
+	  <li><a href="javascript:void(0);" class="active">Kanji</a></li>
 	  <li><a href="verb_forms.html">Verb Forms</a></li>
 	  <li><a href="https://github.com/nadnaps93/Japanese-grammar-cheatsheet/blob/main/README.md" target="_blank">Grammar</a></li>
 	</ul>
@@ -47,15 +47,6 @@
 					<label>from:<input type="text" id="filter_chapter_from"></label> 
 					<label>to:<input type="text" id="filter_chapter_to"></label>
 				</p>
-				<p>
-					<i>Category</i>
-					<label>All:<input type="checkbox" checked class="filterCategoryAllCheckbox" onclick="App.categoryAllAction(this);"></label>
-					<label>V1:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v1" onclick="App.categoryAction(this);"></label> 
-					<label>V2:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v2" onclick="App.categoryAction(this);"></label>
-					<label>V3:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="v3" onclick="App.categoryAction(this);"></label>
-					<label>I-adj:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="i" onclick="App.categoryAction(this);"></label>
-					<label>Na-adj:<input type="checkbox" checked class="filterCategoryCheckbox" data-value="na" onclick="App.categoryAction(this);"></label>
-				</p>
 
 				<p id="filter_results_size"></p>
 
@@ -65,10 +56,9 @@
 
 			<p id="view_box" onclick="App.answer()">
 				<span id="view_random"></span>
-				<span id="view_meaning"></span>
-				<span id="view_kanji"></span>
+				<span id="view_meaning_1"></span>
+				<span id="view_meaning_2"></span>
 				<span id="view_chapter"></span>
-				<span id="view_category"></span>
 			</p>
 
 			<p>
@@ -87,13 +77,15 @@
 
 	<script type="module">
 
-		import { vocabulary_importer } from "./vocabulary/vocabulary_importer.js";
+		import { kanji_importer } from "./kanji/kanji_importer.js";
 
-		window.all_vocabulary = vocabulary_importer.get()
+		window.all_kanji = kanji_importer.get()
+
+		console.log(all_kanji);
 
 	</script>
 
-	<script src="scripts/vocabulary.js"></script>
+	<script src="scripts/kanji.js"></script>
 
 </body>
 

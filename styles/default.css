@@ -43,7 +43,7 @@
 	color: blue;
 }
 
-#view_meaning, #view_chapter, #view_category, #view_kanji {
+#view_meaning, #view_chapter, #view_category, #view_kanji,#view_meaning_1, #view_meaning_2 {
 	display: block;
 	min-height: 28px;
 	min-width: 20px;
