@@ -58,6 +58,7 @@ const App = {
 	showWord: function(index) {
 
 		this._setWordInView(Container.getWord(index));
+		this.answer();
 
 	},
 
