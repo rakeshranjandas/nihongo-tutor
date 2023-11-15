@@ -341,7 +341,7 @@ const Chart = {
 			html += '<p class="'+ (item.seen?"chartItemSeen":"") + '" ' 
 				+ 'title="' + item[AppView.get().show_field_1.key] +'"'
 				+'onclick="App.showWord('+ index +')">'
-				+ item[AppView.get().ask_by_field] + '<p>';
+				+ item[AppView.get().ask_by_field] + '</p>';
 		});
 
 		$(this._chart_div_id_selector).html(html);

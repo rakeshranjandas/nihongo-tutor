@@ -82,6 +82,10 @@
 	color: red;
 }
 
+#chart {
+	white-space: nowrap;
+}
+
 #chart, #hide_chart_button {
 	background-color: #ffffe1;
 }
