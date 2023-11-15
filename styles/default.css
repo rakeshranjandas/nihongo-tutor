@@ -82,36 +82,35 @@
 	color: red;
 }
 
-#chart {
+#chart, #saved {
 	white-space: nowrap;
+	min-width: 8em;
 }
 
-#chart, #hide_chart_button {
+#chart_headers, #chart_content, #hide_chart_button {
 	background-color: #ffffe1;
 }
 
-#chart > header {
+#saved_headers, #saved_content, #hide_saved_button, #save_button {
+	background-color: #e5ffe8;;
+}
+
+#chart_headers, #saved_headers {
 	text-align: center;
 }
 
-#chart > p {
+#chart_content, #saved_content {
+	max-height: min(80vh, 500px);
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+#chart_content > p, #saved_content > p {
 	cursor: pointer;
 }
 
 .chartItemSeen {
 	background-color: #d6fdd6;
-}
-
-#saved, #hide_saved_button, #save_button {
-	background-color: #e5ffe8;;
-}
-
-#saved > header {
-	text-align: center;
-}
-
-#saved > p {
-	cursor: pointer;
 }
 
 .removeSavedSpan {

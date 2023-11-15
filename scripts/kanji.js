@@ -334,8 +334,12 @@ const Chart = {
 		let total = this._items.length;
 		let seen = this._items.filter((item) => item.seen === true ).length;
 
+		html += '<div id="chart_headers">';
 		html += '<header> Total: ' + total + '</header>'; 
-		html += '<header> Seen: ' + seen + '</header>'; 
+		html += '<header> Seen: ' + seen + '</header>';
+		html += '</div>';
+
+		html += '<div id="chart_content">';
 
 		this._items.forEach(function(item,index) {
 			html += '<p class="'+ (item.seen?"chartItemSeen":"") + '" ' 
@@ -343,6 +347,8 @@ const Chart = {
 				+'onclick="App.showWord('+ index +')">'
 				+ item[AppView.get().ask_by_field] + '</p>';
 		});
+
+		html += '</div>';
 
 		$(this._chart_div_id_selector).html(html);
 
