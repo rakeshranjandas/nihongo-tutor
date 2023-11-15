@@ -31,7 +31,6 @@ const App = {
 	getFilterCriteria: function() {
 		return {
 			chapter: this.getChapterFilterCriteria(),
-			category: this.getCategoryFilterCriteria(),
 		}
 	},
 
@@ -50,25 +49,20 @@ const App = {
 		return allowed;
 	},
 
-	getCategoryFilterCriteria: function() {
-		
-		let allowed = [];
-
-		$('.filterCategoryCheckbox:checked').each(function() {
-			allowed.push($(this).data('value'));
-		})
-
-		if ($('.filterCategoryAllCheckbox').is(':checked')) {
-			allowed.push("");
-		}
-
-		return allowed;
-	},
-
 	ask: function() {
 
-		let word = Container.getRandom();
+		this._setWordInView(Container.getRandom());
 
+	},
+
+	showWord: function(index) {
+
+		this._setWordInView(Container.getWord(index));
+
+	},
+
+	_setWordInView: function(word) {
+		
 		this._asked_word = word;
 
 		CardView.setWord(word);
@@ -106,32 +100,6 @@ const App = {
 		$('#filter_div').hide();
 		$('#show_filter_button').show();
 		$('#hide_filter_button').hide();
-	},
-
-	categoryAllAction: function(tis) {
-		if (tis.checked) {
-			$('.filterCategoryCheckbox').prop('checked', true);
-		
-		} else {
-			$('.filterCategoryCheckbox').prop('checked', false);
-		}
-	},
-
-	categoryAction: function(tis) {
-		
-		if (!tis.checked) {
-			$('.filterCategoryAllCheckbox').prop('checked', false);
-			return;
-		}
-
-		this.allCheckboxCheck();
-	},
-
-	allCheckboxCheck: function() {
-
-		if ($('.filterCategoryCheckbox:checked').length === $('.filterCategoryCheckbox').length) {
-			$('.filterCategoryAllCheckbox').prop('checked', true);
-		}
 	},
 
 	showChart: function() {
@@ -279,6 +247,12 @@ const Container = {
 		Chart.update();
 
 		return random_item;
+	},
+
+	getWord: function(index) {
+
+		return this._container_filtered[index];
+
 	}
 
 };
@@ -364,9 +338,10 @@ const Chart = {
 		html += '<header> Total: ' + total + '</header>'; 
 		html += '<header> Seen: ' + seen + '</header>'; 
 
-		this._items.forEach(function(item) {
-			html += '<p class="'+ (item.seen?"chartItemSeen":"") 
-				+ '" title="' + item[AppView.get().show_field_1.key] +'">' 
+		this._items.forEach(function(item,index) {
+			html += '<p class="'+ (item.seen?"chartItemSeen":"") + '" ' 
+				+ 'title="' + item[AppView.get().show_field_1.key] +'"'
+				+'onclick="App.showWord('+ index +')">'
 				+ item[AppView.get().ask_by_field] + '<p>';
 		});
 
@@ -446,10 +421,7 @@ const FilterCriteria = {
 
 	pass: function(item) {
 
-		if (!item.category) item.category = "";
-
-		return this._criteria.chapter.includes(item.chapter.toString().toLowerCase()) 
-			&& this._criteria.category.includes(item.category.toLowerCase()); 
+		return this._criteria.chapter.includes(item.chapter.toString().toLowerCase()); 
 	}
 };
 
