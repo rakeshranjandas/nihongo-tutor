@@ -51,8 +51,18 @@ const App = {
 
 	ask: function() {
 
-		let word = Container.getRandom();
+		this._setWordInView(Container.getRandom());
 
+	},
+
+	showWord: function(index) {
+
+		this._setWordInView(Container.getWord(index));
+
+	},
+
+	_setWordInView: function(word) {
+		
 		this._asked_word = word;
 
 		CardView.setWord(word);
@@ -237,8 +247,13 @@ const Container = {
 		Chart.update();
 
 		return random_item;
-	}
+	},
 
+	getWord: function(index) {
+
+		return this._container_filtered[index];
+
+	}
 };
 
 
@@ -322,9 +337,10 @@ const Chart = {
 		html += '<header> Total: ' + total + '</header>'; 
 		html += '<header> Seen: ' + seen + '</header>'; 
 
-		this._items.forEach(function(item) {
-			html += '<p class="'+ (item.seen?"chartItemSeen":"") 
-				+ '" title="' + item[AppView.get().show_field_1.key] +'">' 
+		this._items.forEach(function(item,index) {
+			html += '<p class="'+ (item.seen?"chartItemSeen":"") + '" ' 
+				+ 'title="' + item[AppView.get().show_field_1.key] +'"'
+				+'onclick="App.showWord('+ index +')">'
 				+ item[AppView.get().ask_by_field] + '<p>';
 		});
 
