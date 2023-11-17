@@ -1,14 +1,14 @@
 export const data = 
 
-`Go: 行く_いく
-Come: 来る_くる
-Come back: 帰る_かえる
-Eat: 食べる_たべる
-Drink: 飲む_のむ
-See: 見る_みる
-Hear: 聞く_きく
-Read: 読む_よむ
-Write: 書く_かく
-Talk: 話す_はなす
-Buy: 買う_かう
-To teach: 教える_おしえる`
+`Go: 行_いく
+Come: 来_くる
+Come back: 帰_かえる
+Eat: 食_たべる
+Drink: 飲_のむ
+See: 見_みる
+Hear: 聞_きく
+Read: 読_よむ
+Write: 書_かく
+Talk: 話_はなす
+Buy: 買_かう
+To teach: 教_おしえる`

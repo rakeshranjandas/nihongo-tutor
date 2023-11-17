@@ -1,14 +1,14 @@
 export const data = 
 
-`To make: 作る_つくる
-Swim: 泳ぐ_およぐ
+`To make: 作_つくる
+Swim: 泳_およぐ
 Oil: 油_あぶら
 Sea: 海_うみ
-Rice wine: 米酒_さけ
-To wait: 待つ_まつ
-School: 学校_がっこう
-Time: 時間_じかん
-To say: 言う_いう
-A watch: 時計_とけい
-Language: 言語_げんご
-Cooked rice: ご飯_ごはん`
+Rice wine: 酒_さけ
+To wait: 待_まつ
+School: 校_がっこう
+Time: 時_じかん
+To say: 言_いう
+Measure: 計_はかる　/ ケイ
+Language: 語_ご
+Cooked rice: 飯_めし / ハン`

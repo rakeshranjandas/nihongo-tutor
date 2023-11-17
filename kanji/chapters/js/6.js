@@ -7,6 +7,6 @@ Leg: 足_あし
 Rain: 雨_あめ
 Bamboo: 竹_たけ
 Rice: 米_こめ
-Shellfish: 貝類_かいるい
+Shellfish: 貝_かい
 Stone: 石_いし
 Thread: 糸_いと`
