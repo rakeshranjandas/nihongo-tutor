@@ -11,4 +11,4 @@ Husband: 夫_おっと
 Wife: 妻_つま or 嫁_よめ
 He: 彼_かれ
 Chief, main: 主な_おもな
-Deep inside, other's wife: 奥_おく
+Deep inside, other's wife: 奥_おく`
