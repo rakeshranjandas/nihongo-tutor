@@ -10,5 +10,5 @@ To clear up: 晴_はれる
 Silent: 静_しずか
 Temple: 寺_てら
 Hold: 持_もつ
-Luggage: 荷物_にもつ
+Luggage: 荷_に(もつ)
 A song: 歌_うた`
