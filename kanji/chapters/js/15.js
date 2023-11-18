@@ -1,6 +1,6 @@
 export const data = 
 
-`Friend: 友達_ともだち
+`Friend: 友_ともだち
 Father: 父_ちち
 Mother: 母_はは
 Elder brother: 兄_あに
