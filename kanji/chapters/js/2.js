@@ -2,7 +2,7 @@ export const data =
 
 `Fire: 火_ひ
 Water: 水_みず
-Money: お金_おかね
+Money: 金_かね
 Soil: 土_つち
 Child: 子_こども
 Woman: 女_おんな
