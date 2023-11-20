@@ -5,9 +5,9 @@ Spirit, mind, air, atmosphere: 気_き
 Have, possess, exist: 有_ある
 Name: 名_な
 A parent: 親_おや
-To cut: 切る_きる
-Airmail: 便_びん
-To use: 使用する_しようする
+To cut: 切_きる
+Current, traffic, convenience: 便_べん
+Profit, proficient: 利_りし
 Un-, in-, not: 不_ふ
 Young: 若_わかい
 Early: 早_はやい
