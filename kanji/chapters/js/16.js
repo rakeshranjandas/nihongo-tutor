@@ -7,7 +7,7 @@ Name: 名_な
 A parent: 親_おや
 To cut: 切_きる
 Current, traffic, convenience: 便_べん
-Profit, proficient: 利_りし
+Profit, proficient: 利_り
 Un-, in-, not: 不_ふ
 Young: 若_わかい
 Early: 早_はやい

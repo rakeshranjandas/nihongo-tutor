@@ -11,4 +11,4 @@ Inner, within, inside: 内_うち
 Department, part, section, club: 部_ぶ
 Station: 駅_えき
 Shrine, company, assembly: 社_しゃ
-A hospital: 院_いん`
+Hall, house, institute: 院_いん`
