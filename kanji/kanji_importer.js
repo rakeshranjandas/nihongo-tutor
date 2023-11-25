@@ -19,6 +19,9 @@ import { data as chapter_17 } from "./chapters/js/17.js"
 import { data as chapter_18 } from "./chapters/js/18.js"
 import { data as chapter_19 } from "./chapters/js/19.js"
 import { data as chapter_20 } from "./chapters/js/20.js"
+import { data as chapter_21 } from "./chapters/js/21.js"
+import { data as chapter_22 } from "./chapters/js/22.js"
+import { data as chapter_23 } from "./chapters/js/23.js"
 
 export const kanji_importer = {
 
