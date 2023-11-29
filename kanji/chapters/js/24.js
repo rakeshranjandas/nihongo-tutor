@@ -1,7 +1,7 @@
 export const data = 
 
 `To rise, wake up: 起_おきる
-Sleep: 眠_ねる
+Sleep: 寝_ねる
 Play, fun, wander: 遊_あそぶ
 Stand, establish: 立_たつ
 To sit: 座_すわる
